@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="icon" href="img/icon.png">
     <title>SMAN 1 TAJURHALANG</title>
   </head>
@@ -28,7 +29,7 @@
                 <div class="header-link"><a href=""><i class="fab fa-youtube"></i></a></div>
                 <div class="header-link"><a href=""><i class="fab fa-facebook-f"></i></a></div>
                 <div class="header-link"><a href=""><i class="fab fa-instagram"></i></a></div>
-                <div class="ml-auto myBg-Blue "><a href="" class="text-center noBorder">SMA TERBUKA 1 TAJURHALANG</a></li>
+                <div class="ml-auto myBg-Blue "><a href="index.html">SMA TERBUKA 1 TAJURHALANG</a></div>
             </div>
         </div>
     </header>
@@ -67,19 +68,19 @@
           <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
         </ol>
         <div class=" carousel-inner">
-          <div class="carousel-item active slide1">  <!-- style="background-image: url(/img/pexels-pixabay-207692.jpg);height: 461px;background-repeat: no-repeat;width:100%; "-->
+          <div class="carousel-item active slide1" data-interval="3000">  <!-- style="background-image: url(/img/pexels-pixabay-207692.jpg);height: 461px;background-repeat: no-repeat;width:100%; "-->
             <div class="mycarousel-caption" >
                 <h5>MENDIDIK GENERASI BERPRESTASI <br> DAN  BERAKHLAK MULIA</h5>
                 <p>#CintailahIbuPertiwi</p>
             </div>
           </div>
-          <div class="carousel-item slide2"> <!--style="background-image: url(/img/guru-darken\ 1.png);height: 461px;background-repeat: no-repeat;width: 100%;background-position: center;"-->
+          <div class="carousel-item slide2" data-interval="3000"> <!--style="background-image: url(/img/guru-darken\ 1.png);height: 461px;background-repeat: no-repeat;width: 100%;background-position: center;"-->
             <div class="mycarousel-caption">
               <h5>MENDIDIK GENERASI BERPRESTASI <br> DAN  BERAKHLAK MULIA</h5>
               <p>#CintailahIbuPertiwi</p>
             </div>
           </div>
-          <div class="carousel-item slide3"> <!-- style="background-image: url(/img/dalam-darken.png);height: 461px;background-repeat: no-repeat;width: 100%;background-position: center;"-->
+          <div class="carousel-item slide3" data-interval="3000"> <!-- style="background-image: url(/img/dalam-darken.png);height: 461px;background-repeat: no-repeat;width: 100%;background-position: center;"-->
             <div class=" mycarousel-caption">
               <h5>MENDIDIK GENERASI BERPRESTASI<br>DAN BERAKHLAK MULIA</h5>
               <p>#CintailahIbuPertiwi</p>
@@ -95,13 +96,15 @@
       </div>
     
       <div class="keunggulan container bg-white">
-          <div class="container keunggulanTitle">
+        <div class="container">
+          <div class="keunggulanTitle">
             <h1 class="text-center judulBesar">KEUNGGULAN <span>KAMI</span></h1>
             <p class="text-center paragrafKecil">
               Sekolah kami selalu melakukan perbaikan pembelajaran, 
               lingkungan sekolah yang asri serta nyaman dan ramah
             </p>
             <div class="line"></div>
+          </div>
               <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 mt-5 reveal-up justify-content-center">
                 <div class="col mb-4">
                   <div class="mybox myBg-Orange h-100">
@@ -152,16 +155,13 @@
                   </div>
                 </div> <!--col-->
               </div> <!--row-->
-          </div>
-          
-      </div> <!--Keunggulan--> 
-          <!-- Slider main container -->
-          <div class="swiper-container">
+                        <!-- Slider main container -->
+          <div class="swiper-container reveal-up">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
-                <div class="mybox myBg-Blue">
+                <div class="myboxMob myBg-Blue">
                   <div class="box-title">
                     <h4>Laboratorium</h4>
                   </div> <!--title-->
@@ -177,7 +177,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="mybox myBg-Red">
+                <div class="myboxMob myBg-Red">
                   <div class="box-title">
                     <h4>Terakreditasi A</h4>
                   </div> <!--title-->
@@ -193,7 +193,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="mybox myBg-Orange">
+                <div class="myboxMob myBg-Orange">
                   <div class="box-title">
                     <h4>Wifi Gratis</h4>
                   </div> <!--title-->
@@ -210,13 +210,100 @@
               </div>
             </div>
             <div class="swiper-pagination"></div>
-           
+          </div> <!---swiper container-->
+        </div> <!---container-->
+      </div> <!--Keunggulan-->
+<!------------------Keunggulan-----------------> 
 
-          </div>
-    
+    <div class="cutterTop-Pendaftaran"></div>
+      <div class="pendaftaran container myBg-Blue ">
+        
+        <div class="container-fluid ">
+          <div class="row reveal-right">
+            <div class="col-md-12 col-lg-12 col-xl-9">
+              <div class="pertama"> <!--d-fex ini biar si <h1> ke tengah boxnya-->
+                <h1 class="text-center">Pendaftaran Peserta Didik Baru</h1>
+              </div>
+            </div> <!--col-->
+            <div class="col-md-12  col-lg-12 col-xl-3 d-flex justify-content-sm-center justify-content-md-center  align-items-center"> <!--d-flex ini biar si button ketengah container -->
+              <div class="kedua myBounce">
+                <a href="" class="btn">Daftar Sekarang!</a>
+              </div>
+            </div> <!--col-->
+            
+          </div> <!--Row-->
+        </div> <!--container-fluid-->
+      </div><!---pendaftaran-->
+    <div class="cutterBottom-Pendaftaran"></div>
+<!-----------------Pendaftaran-----------------> 
 
+      <div class="prestasi container bg-white">
+        <div class="container">
+          <div class="prestasiTitle mb-5">
+            <h1 class="text-center judulBesar">PRESTASI <span>KAMI</span></h1>
+            <p class="text-center paragrafKecil">
+              Kami juga mempunyai segudang prestasi dari siswa/siswi berprestasi 
+            </p>
+            <div class="line"></div>
+          </div> <!---prestasi title-->
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 reveal-up">
+            <div class="col">
+              <div class="box-prestasi">
+                <div class="img-box">
+                  <img src="img/Prestasi 1.png" alt=""> 
+                </div>
+                <div class="cutterBottom"></div>
+                <div class="cutterBottom-dua"></div>
+                <div class="box-prestasi-caption">
+                  <h4>JUARA 1</h4>
+                  <p>Lomba Teater Provinsi</p>
+                </div>
+              </div> <!---box-prestasi-->
+            </div> <!--col-->
 
+            <div class="col">
+              <div class="box-prestasi">
+                <div class="img-box">
+                  <img src="img/Prestasi 2.png" alt=""> 
+                </div>
+                <div class="cutterBottom"></div>
+                <div class="cutterBottom-dua"></div>
+                <div class="box-prestasi-caption">
+                  <h4 style="color: #4D1A19;">JUARA 1</h4>
+                  <p>Lomba Paskibra Nasional</p>
+                </div>
+              </div> <!---box-prestasi-->
+            </div> <!--col-->
 
+            <div class="col">
+              <div class="box-prestasi">
+                <div class="img-box">
+                  <img src="img/Prestasi 3.png" alt=""> 
+                </div>
+                <div class="cutterBottom"></div>
+                <div class="cutterBottom-dua"></div>
+                <div class="box-prestasi-caption">
+                  <h4 style="color: #AD4D22;">JUARA 1</h4>
+                  <p>Lomba Pramuka Provinsi</p>
+                </div>
+              </div> <!---box-prestasi-->
+            </div> <!--col-->
+          </div> <!--row-->
+        </div> <!---containe---->
+      </div> <!-----prestasi-->
+<!-----------------Prestasi-------------------->
+
+      <div class="jurusan container bg-white">
+        <div class="container">
+          <div class="jurusanTitle">
+            <h1 class="text-center judulBesar">JURUSAN <span>KAMI</span></h1>
+            <p class="text-center paragrafKecil">
+              <i class="fas fa-info-circle"></i> Pilih sesuai passion-mu dengan hati-hati, cari info tentang jurusannya apa saja yang akan dipelajari kelak jika mengikuti ini, itu
+            </p>
+            <div class="line"></div>
+          </div> <!--jurusan title-->
+        </div> <!---container-->
+      </div> <!---jurusan-->
     </main>
     
     <script src="/js/app.js"></script>
@@ -269,12 +356,21 @@
       // Optional parameters
       direction: 'horizontal',
       loop: true,
+      effect: 'cube',
+      grabCursor: true,
+      cubeEffect: {
+      shadow: true,
+      slideShadows: true,
+      shadowOffset: 20,
+      shadowScale: 0.94,
+      },
       pagination: {
       el: '.swiper-pagination',
       },
       autoplay: {
       delay: 5000,
       },
+
       });
   </script>
     
