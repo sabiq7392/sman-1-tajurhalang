@@ -16,12 +16,13 @@ $fontbesar:32px;
 }
 
 body {
-    background-color:#f1f2f6 ;
+    background-color: #f5f5f5;
     font-family: 'Raleway', sans-serif;
 }
 header {
     .header-link-wrapper {
-       display: flex;
+        height: fit-content;
+        display: flex;
         
         div {
             display: inherit;
@@ -55,9 +56,10 @@ header {
         }
         
         div:last-child {
-            height: 40px;
-            width: 290px;
+            
             a {
+                text-align: center;
+                padding: 0.5em 1.5em;
                 margin: auto;
                 color: white;
                 font-size: 16px;
@@ -96,7 +98,7 @@ nav {
                 
             }
             .nav-link {
-                color: black!important;
+                color: rgb(75, 75, 75)!important;
                 transition: 0.4s;
                 font-size: 18px;
             }
@@ -165,9 +167,8 @@ nav {
 .totop-wrapper {
     position: absolute;
     z-index: 15;
-    box-shadow: $myshadow;
-
     .totop {
+        box-shadow: $myshadow;
         position: fixed;
         background-color: #217AD3;
         border-radius:4px;
@@ -181,7 +182,8 @@ nav {
     
 }
 .keunggulan {
-    margin-top: -12px;
+    position: relative;
+    z-index: 2;
     max-width: 1366px!important;
     height: fit-content;
     .keunggulanTitle {
@@ -225,56 +227,183 @@ nav {
     .mybox:hover {
        transform: scale(1.02);
     }
-
+    .swiper-container {
+        margin-top: 3em;
+        display: none;
+        width: 70vw;
+        height: fit-content;
+        .swiper-pagination-bullet {
+            background-color: white;
+            width: 15px;
+            height: 15px;
+            margin-top: 1em;
+        }
+        .swiper-wrapper {
+            
+            .swiper-slide {
+                
+                .myboxMob {
     
-}
-
-.swiper-container {
-    display: none;
-    width: 284px;
-    height: fit-content;
-    .swiper-pagination-bullet {
-        background-color: white;
-    }
-    .swiper-wrapper {
-        
-        .swiper-slide {
-            
-            .mybox {
-
-                box-shadow: $myshadow;
-                border-radius: 10px;
-                text-align: center;
-                display: block;
-                transition: 0.3s;
-                height: 441px;
-                width: 284px!important;
-
-                .box-title {
-                    padding-top: 2em ;
-            
-                    h4 {
-                        color: white;
-                        font-weight: 500;
-                        font-size: 30px;
+                    box-shadow: $myshadow;
+                    border-radius: 5px;
+                    text-align: center;
+                    display: block;
+                    transition: 0.3s;
+                    height: 470px;
+                    width: 70vw!important;
+    
+                    .box-title {
+                        padding-top: 2em ;
+                
+                        h4 {
+                            color: white;
+                            font-weight: 500;
+                            font-size: 30px;
+                        }
                     }
-                }
-                .box-image {
-                    padding: 2em ;
-                    img {
-                        width: 150px;
+                    .box-image {
+                        padding: 2em ;
+                        img {
+                            width: 150px;
+                        }
                     }
-                }
-                .box-caption {
-                    padding: 0 2em;
-                    padding-bottom: 1em;
-                    
-                    p {
-                        color: rgba(#fff,0.9);
-                        font-size: 16px;
+                    .box-caption {
+                        padding: 0 2em;
+                        padding-bottom: 1em;
+                        
+                        p {
+                            color: rgba(#fff,0.9);
+                            font-size: 16px;
+                        }
                     }
                 }
             }
+        }
+    }
+
+    
+}
+.cutterTop-Pendaftaran {
+    margin-bottom: -1em;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    transform: skewY(-1deg);
+    margin-top:-1em!important ;
+    margin: auto;
+    max-width: 1366px!important;
+}
+.cutterBottom-Pendaftaran {
+    margin-top: -1em;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    transform: skewY(1deg);
+    margin: auto!important;
+    margin-top: -1em!important;
+    max-width: 1366px!important;
+}
+.pendaftaran {
+    margin-top: -2em;
+    padding: 7em;
+    max-width: 1366px;
+    
+    .container-fluid {
+        
+        padding: 0!important;
+        min-width: 200px;
+    }
+    .pertama {
+        margin-top: 0.5em;
+        h1 {
+            font-weight: medium;
+            font-size: 50px;
+            margin: 0!important;
+
+
+        }
+    }
+    .kedua {
+        margin-top: 0.5em;
+        a {
+            transition: 0.3s;
+            padding: 0.7em 1em;
+            font-weight: 600;
+            background-color: white;
+            border-radius: 25px;
+            font-size: 16px;
+            box-shadow: $myshadow;
+            color: black;
+        }
+        a:hover {
+            transform: scale(1.2);
+            
+        }
+    }
+}
+.prestasi {
+    position: relative;
+    z-index: 1;
+    margin-top: -1em;
+    max-width: 1366px;
+    
+    
+    h1 {
+        span {
+            color: $myblue;
+        }
+    }
+    .box-prestasi {
+        .img-box {
+            box-shadow: $myshadow;
+            img {
+                z-index: -1;
+                width: 100%;
+                height: 355px;
+            }
+        }
+        .cutterBottom {
+            background-color: white;
+            width: 100%;
+            margin-top: -70px;
+            height:70px;
+            z-index: 1;
+            position: relative;
+        }
+        .cutterBottom-dua {
+            background-color: white;
+            width: 100%;
+            margin-top: -92px;
+            height: 70px;
+            transform: skewY(6deg)!important;
+            background-color: white!important;
+        }
+        .box-prestasi-caption {
+            z-index: 2;
+            top: -51px;
+            text-align: center;
+            position: relative;
+            h4 {
+                color: $myblue;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            p {
+                font-size: 20px;
+                font-weight: 500;
+                color: black;
+            }
+        }
+    }
+
+}
+.jurusan {
+    max-width: 1366px!important;
+    height: 1000px;
+
+    h1 {
+        span {
+            color: $myblue;
         }
     }
 }
@@ -290,22 +419,24 @@ nav {
   
 
 // media quaries
+@media screen and (max-width: 1200px) {
+    .kedua {
+        margin-top: 3em;
+        a {
+            padding: 0.7em 4em!important;
+        }
+    }
+}
 @media screen and (max-width: 992px) {
     header {
         .header-link-wrapper {
             div {
                 a { 
                     i {
-                        
                         font-size:22px;
-                        
-                        
                     }
-
                 }   
-    
             }
-            
             div:last-child {
                 height: 35px;
                 a {
@@ -322,7 +453,7 @@ nav {
         }
         ul {
             margin-top: 1em;
-            border-top:1px solid #f4f4f4 ;
+            border-top:1px solid #e0e0e0 ;
              li {
                 a.active {
                     margin-top: 1em;
@@ -337,31 +468,66 @@ nav {
              }
         }
     }
-    .selamat {
-        h4 {
-            font-size: 17px;
-            padding: 0.9em 0;
-            font-weight: 500;
-        }
-    }
 }
 @media screen and (max-width: 768px) {
+    .keunggulan {
+        .row {
+            display: none!important;
+
+
+        }
+        .swiper-container {
+            display: block!important;
+        }
+  
+    }
+    .prestasi {
+        .box-prestasi {
+            .cutterBottom {
+                margin-top:-69px!important;
+                margin-bottom: 1em!important;
+            }
+            .cutterBottom-dua {
+                margin-top: -7.8em;
+            }
+        }
+        
+    }
 
 }
 @media screen and (max-width: 576px) {
+    header {
+        .header-link-wrapper {
+            div:last-child {
+                height: 50px;
+                width: 160px;
+                a {
+                    font-size: 12px!important;
+                }
+            }
+        }
+    }
     .judulBesar {
         font-size: 37px!important;
     }
     .paragrafKecil {
         font-size: 14px!important;
     }
-    .keunggulan {
-        display: none!important;
+    .carousel-inner {
+        .mycarousel-caption {
+            h5, p {
+                font-size: 20px!important;
+            }
+        }
     }
-    .swiper-container {
-        display: block!important;
-    }
-
+    .pendaftaran {
+        .pertama {
+            h1 {
+                font-size: 40px!important;
+            }
+        }
+            
+    } 
 }
 
 
@@ -374,6 +540,7 @@ nav {
     font-weight: normal;
 }
 .paragrafKecil {
+    font-weight: 500;
     font-size: 16px;
 }
 .myBg-Blue {
@@ -407,7 +574,7 @@ a {
     margin-right: auto;
 }
 .line {
-    width: 90%;
+    width: 85%;
     margin: auto;
     height: 1px;
     background-color: $myblue;
@@ -435,7 +602,6 @@ a {
         transform: translateY(0);
     }
 }
-
 @keyframes boxmoveup {
     from {
         bottom: -100px;
@@ -537,6 +703,43 @@ a {
 		left: 0; opacity: 0; 
 	}
 }
+@keyframes myBounce {
+    0% {
+        
+        transform: translateY(0px);
+    }
+    10% {
+        transform: translateY(-30px);
+    }
+    20% {
+        transform: translateY(0px);
+    }
+    30% {
+        transform: translateY(-25px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(0px);
+    }
+    70% {
+        transform: translateY(-15px);
+    }
+    80% {
+        transform: translateY(0px);
+    }
+    90% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px)
+    }
+
+}
 // activeNoClass 
 
 .movetoup {
@@ -553,3 +756,22 @@ a {
     transform: translateY(0px);
     opacity: 1;
 }
+//-------
+.reveal-right {
+    position: relative;
+    transform: translateX(-300px);
+    opacity: 0;
+}
+.reveal-right.active {
+    animation: boxmoveright 1s;
+    transform: translateX(0px);
+    opacity: 1;
+}
+.myBounce {
+    position: relative;
+    
+}
+.myBounce.active {
+   animation: myBounce 2s  2s ;
+}
+
