@@ -10,6 +10,10 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+header {
+  border-bottom: 1px solid #f3f3f3;
+}
+
 header .header-link-wrapper {
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -79,7 +83,9 @@ nav {
 }
 
 nav .navbar-brand {
-  padding: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 0.5em 0;
 }
 
 nav button {
@@ -320,26 +326,24 @@ nav ul li .nav-link:hover {
 }
 
 .cutterTop-Pendaftaran {
-  margin-bottom: -1em;
   background-color: white;
   width: 100%;
-  height: 50px;
+  height: 55px;
   -webkit-transform: skewY(-1deg);
           transform: skewY(-1deg);
-  margin-top: -1em !important;
+  margin-top: -1.5em !important;
   margin: auto;
   max-width: 1366px !important;
 }
 
 .cutterBottom-Pendaftaran {
-  margin-top: -1em;
   background-color: white;
   width: 100%;
-  height: 50px;
+  height: 55px;
   -webkit-transform: skewY(1deg);
           transform: skewY(1deg);
   margin: auto !important;
-  margin-top: -1em !important;
+  margin-top: -1.5em !important;
   max-width: 1366px !important;
 }
 
@@ -389,7 +393,7 @@ nav ul li .nav-link:hover {
 .prestasi {
   position: relative;
   z-index: 1;
-  margin-top: -1em;
+  margin-top: -1.5em;
   max-width: 1366px;
 }
 
@@ -448,11 +452,67 @@ nav ul li .nav-link:hover {
 
 .jurusan {
   max-width: 1366px !important;
-  height: 1000px;
+  height: 3000px;
 }
 
-.jurusan h1 span {
+.jurusan .jurusanTitle h1 span {
   color: #217AD3;
+}
+
+.jurusan .box-jurusan {
+  max-width: 410px;
+  -webkit-box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.jurusan .box-jurusan .box-title {
+  margin-bottom: 4em;
+}
+
+.jurusan .box-jurusan .box-title h4 {
+  font-size: 30px;
+}
+
+.jurusan .box-jurusan .box-image {
+  margin-bottom: 4em;
+}
+
+.jurusan .box-jurusan .box-image img {
+  width: 190px;
+  height: 190px;
+}
+
+.jurusan .box-jurusan .box-caption p {
+  font-size: 16px;
+}
+
+.jurusan .box-jurusan .card-footer {
+  display: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.jurusan .box-jurusan .card-footer .laci-satu, .jurusan .box-jurusan .card-footer .laci-dua, .jurusan .box-jurusan .card-footer .laci-tiga {
+  margin-top: 10px;
+  max-width: 410px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.jurusan .box-jurusan .card-footer .laci-satu a, .jurusan .box-jurusan .card-footer .laci-dua a, .jurusan .box-jurusan .card-footer .laci-tiga a {
+  color: white;
+  font-size: 23px;
+}
+
+.jurusan .box-jurusan .card-footer .laci-satu:hover, .jurusan .box-jurusan .card-footer .laci-dua:hover, .jurusan .box-jurusan .card-footer .laci-tiga:hover {
+  -webkit-box-shadow: -1px 3px 21px 1px rgba(0, 0, 0, 0.37);
+          box-shadow: -1px 3px 21px 1px rgba(0, 0, 0, 0.37);
+}
+
+.jurusan .box-jurusan .ipa {
+  margin-top: 40px;
 }
 
 @-webkit-keyframes mySlide {
@@ -527,6 +587,12 @@ nav ul li .nav-link:hover {
   }
   .prestasi .box-prestasi .cutterBottom-dua {
     margin-top: -7.8em;
+  }
+  .jurusan .row .col {
+    margin-bottom: 2em;
+  }
+  .jurusan .row .col .box-jurusan {
+    margin: auto !important;
   }
 }
 

@@ -1,3 +1,21 @@
+if (document.getElementsByClassName("card-footer")[0].addEventListener) {
+  document.getElementsByClassName("card-footer")[0].addEventListener("onmouseover", hoverjurusan);
+}
+function hoverjurusan() {
+  document.getElementsByClassName("card-footer")[0].style.display = "block";
+}
+
+window.onscroll = function() {sekrol()};
+function sekrol() {
+  var navBrand = document.getElementsByClassName("navbar-brand")[0];
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    navBrand.style.padding = "0";
+  }
+  else {
+    navBrand.style.padding = "0.5em 0";
+  }
+}
+
 window.addEventListener('scroll', reveal);
 function reveal() {
   var reveal_i = document.querySelectorAll('.reveal-up');

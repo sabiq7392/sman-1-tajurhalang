@@ -19,7 +19,9 @@ body {
     background-color: #f5f5f5;
     font-family: 'Raleway', sans-serif;
 }
+
 header {
+    border-bottom: 1px solid rgb(243, 243, 243);
     .header-link-wrapper {
         height: fit-content;
         display: flex;
@@ -71,11 +73,11 @@ header {
     }
 }
 nav {
-    
     box-shadow: $myshadow;
     font-family: $roboto;
     .navbar-brand {
-        padding: 0;
+        transition: 0.5s;
+        padding: 0.5em 0;
     }
     button {
         border: 0!important;
@@ -284,23 +286,21 @@ nav {
     
 }
 .cutterTop-Pendaftaran {
-    margin-bottom: -1em;
     background-color: white;
     width: 100%;
-    height: 50px;
+    height: 55px;
     transform: skewY(-1deg);
-    margin-top:-1em!important ;
+    margin-top:-1.5em!important ;
     margin: auto;
     max-width: 1366px!important;
 }
 .cutterBottom-Pendaftaran {
-    margin-top: -1em;
     background-color: white;
     width: 100%;
-    height: 50px;
+    height:55px;
     transform: skewY(1deg);
     margin: auto!important;
-    margin-top: -1em!important;
+    margin-top: -1.5em!important;
     max-width: 1366px!important;
 }
 .pendaftaran {
@@ -344,7 +344,7 @@ nav {
 .prestasi {
     position: relative;
     z-index: 1;
-    margin-top: -1em;
+    margin-top: -1.5em;
     max-width: 1366px;
     
     
@@ -399,13 +399,62 @@ nav {
 }
 .jurusan {
     max-width: 1366px!important;
-    height: 1000px;
+    height: 3000px;
 
-    h1 {
-        span {
-            color: $myblue;
+    .jurusanTitle {
+        h1 {
+            span {
+                color: $myblue;
+            }
         }
     }
+    .box-jurusan {
+        max-width: 410px;
+        box-shadow: $myshadow;
+        border-radius: 10px;
+        .box-title {
+            margin-bottom: 4em;
+            h4 {
+                font-size: 30px;
+            }
+        }
+        .box-image {
+            margin-bottom: 4em;
+            img {
+                width: 190px;
+                height: 190px;
+            }
+        }
+        .box-caption {
+            
+            p {
+                font-size: 16px;
+            }
+        }
+        .card-footer {
+            display: none;
+            transition: 1s;
+            .laci-satu, .laci-dua, .laci-tiga {
+
+                margin-top: 10px;
+                max-width: 410px;
+                transition: 0.5s;
+                border-radius: 0px 0px 10px 10px;
+                a {
+                    color: white;
+                    font-size: 23px;
+                }
+            }
+            .laci-satu:hover, .laci-dua:hover, .laci-tiga:hover {
+                box-shadow: -1px 3px 21px 1px rgba(0,0,0,0.37);
+            }
+
+        }
+        .ipa {
+            margin-top: 40px;
+        }
+    }
+    
 }
 
 @keyframes mySlide {
@@ -491,6 +540,18 @@ nav {
                 margin-top: -7.8em;
             }
         }
+        
+    }
+    .jurusan {
+        .row {
+            .col {
+                margin-bottom: 2em;
+                .box-jurusan {
+                    margin: auto!important;
+                }
+            }
+        }
+        
         
     }
 
