@@ -1,9 +1,3 @@
-if (document.getElementsByClassName("card-footer")[0].addEventListener) {
-  document.getElementsByClassName("card-footer")[0].addEventListener("onmouseover", hoverjurusan);
-}
-function hoverjurusan() {
-  document.getElementsByClassName("card-footer")[0].style.display = "block";
-}
 
 window.onscroll = function() {sekrol()};
 function sekrol() {

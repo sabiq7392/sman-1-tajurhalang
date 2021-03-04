@@ -488,22 +488,33 @@ nav ul li .nav-link:hover {
 }
 
 .jurusan .box-jurusan .card-footer {
-  display: none;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
 .jurusan .box-jurusan .card-footer .laci-satu, .jurusan .box-jurusan .card-footer .laci-dua, .jurusan .box-jurusan .card-footer .laci-tiga {
-  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80px;
+  margin-top: 40px;
   max-width: 410px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border-radius: 0px 0px 10px 10px;
 }
 
-.jurusan .box-jurusan .card-footer .laci-satu a, .jurusan .box-jurusan .card-footer .laci-dua a, .jurusan .box-jurusan .card-footer .laci-tiga a {
+.jurusan .box-jurusan .card-footer .laci-satu h4, .jurusan .box-jurusan .card-footer .laci-satu p, .jurusan .box-jurusan .card-footer .laci-dua h4, .jurusan .box-jurusan .card-footer .laci-dua p, .jurusan .box-jurusan .card-footer .laci-tiga h4, .jurusan .box-jurusan .card-footer .laci-tiga p {
+  margin-top: 22px;
   color: white;
   font-size: 23px;
+}
+
+.jurusan .box-jurusan .card-footer .laci-satu h4 span, .jurusan .box-jurusan .card-footer .laci-satu p span, .jurusan .box-jurusan .card-footer .laci-dua h4 span, .jurusan .box-jurusan .card-footer .laci-dua p span, .jurusan .box-jurusan .card-footer .laci-tiga h4 span, .jurusan .box-jurusan .card-footer .laci-tiga p span {
+  display: none;
 }
 
 .jurusan .box-jurusan .card-footer .laci-satu:hover, .jurusan .box-jurusan .card-footer .laci-dua:hover, .jurusan .box-jurusan .card-footer .laci-tiga:hover {
@@ -1085,5 +1096,10 @@ a {
 .myBounce.active {
   -webkit-animation: myBounce 2s  2s;
           animation: myBounce 2s  2s;
+}
+
+.myBounce.active:hover {
+  -webkit-animation: none !important;
+          animation: none !important;
 }
 /*# sourceMappingURL=style.css.map */

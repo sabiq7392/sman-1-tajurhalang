@@ -16,8 +16,9 @@
     <!--Slider-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
     <link rel="icon" href="img/icon.png">
     <title>SMAN 1 TAJURHALANG</title>
   </head>
@@ -250,7 +251,7 @@
             <div class="col">
               <div class="box-prestasi">
                 <div class="img-box">
-                  <img src="img/Prestasi 1.png" alt=""> 
+                  <img src="img/Prestasi_1.png" alt=""> 
                 </div>
                 <div class="cutterBottom"></div>
                 <div class="cutterBottom-dua"></div>
@@ -264,7 +265,7 @@
             <div class="col">
               <div class="box-prestasi">
                 <div class="img-box">
-                  <img src="img/Prestasi 2.png" alt=""> 
+                  <img src="img/Prestasi_2.png" alt=""> 
                 </div>
                 <div class="cutterBottom"></div>
                 <div class="cutterBottom-dua"></div>
@@ -278,7 +279,7 @@
             <div class="col">
               <div class="box-prestasi">
                 <div class="img-box">
-                  <img src="img/Prestasi 3.png" alt=""> 
+                  <img src="img/Prestasi_3.png" alt=""> 
                 </div>
                 <div class="cutterBottom"></div>
                 <div class="cutterBottom-dua"></div>
@@ -308,14 +309,14 @@
           </div>
           <div class="row row-cols-1 row-cols-md-2 reveal-up">
             <div class="col text-white text-center">
-              <div class="box-jurusan h-100  myBg-Red mb-2">
+              <div class="box-jurusan  myBg-Red mb-2">
                 <div class="box-title pt-5">
                   <h4>Ilmu Pengetahuan Alam</h4>
                 </div> <!---box title-->
                 <div class="box-image">
                   <img src="/img/atom-white.png" alt="">
                 </div> <!--box image-->
-                <div class="box-caption pl-4 pr-4">
+                <div class="box-caption pl-4 pr-4" style="padding-bottom: 15px;">
                   <p class="">
                     Di jurusan ini kita lebih banyak mempelajari ilmu sains, mempelajari apa 
                     itu biologi, kimia, fisika. Bagaimana mereka tercipta, apa fungsi-fungsi mereka,
@@ -323,23 +324,35 @@
                   </p>
                 </div> <!---box caption-->
                 <div class="card-footer ipa">
-                  <div class="laci-satu myBg-Red p-4"><a href="">Biologi</a></div>
-                  <div class="laci-dua myBg-Red p-4"><a href="">Fisika</a></div>
-                  <div class="laci-tiga myBg-Red p-4"><a href="">Kimia</a></div>
+                  <div class="laci-satu myBg-Red ">
+                    <p>Biologi
+                      <br><br>
+                      <span class="ini">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quas ad inventore veniam necessitatibus optio repudiandae, quisquam, blanditiis consequatur corporis laudantium culpa illo nobis non accusantium eligendi. Sunt, vero ducimus?</span>
+                    </p>
+                    
+                  </div>
+                  <div class="laci-dua myBg-Red">
+                    <h4>Fisika</h4>
+                    
+                  </div>
+                  <div class="laci-tiga myBg-Red">
+                    <h4 >Kimia</h4>
+                    
+                  </div>
                 </div>
               </div> <!--box jurusan IPA-->
               
               
             </div> <!---col-->
             <div class="col text-white text-center ">
-              <div class="box-jurusan myBg-Blue mb-2 h-100 ml-auto">
+              <div class="box-jurusan myBg-Blue mb-2  ml-auto">
                 <div class="box-title pt-5">
                   <h4>Ilmu Pengetahuan Sosial</h4>
                 </div> <!---box title-->
                 <div class="box-image">
                   <img src="/img/user-white.png" alt="">
                 </div> <!--box image-->
-                <div class="box-caption pl-4 pr-4">
+                <div class="box-caption pl-4 pr-4" style="padding-bottom: 30px;">
                   <p>
                     Di jurusan ini kita lebih banyak mempelajari ilmu sosial, mempelajari apa itu ekonomi, 
                     sosialogi, sejarah, mempelajari akutansi, klasifikasi sosial, sifat-sifat manusia, 
@@ -347,9 +360,15 @@
                   </p>
                 </div> <!---box caption-->
                 <div class="card-footer ips">
-                  <div class="laci-satu  myBg-Blue p-4"><a href="">Sosialogi</a></div>
-                  <div class="laci-dua  myBg-Blue p-4"><a href="">Sejarah</a></div>
-                  <div class="laci-tiga  myBg-Blue p-4"><a href="">Ekonomi</a></div>
+                  <div class="laci-satu  myBg-Blue">
+                    <h4 >Sosialogi</h4>
+                  </div>
+                  <div class="laci-dua  myBg-Blue">
+                    <h4 >Sejarah</h4>
+                  </div>
+                  <div class="laci-tiga  myBg-Blue">
+                    <h4 >Ekonomi</h4>
+                  </div>
                 </div>
               </div> <!--box jurusan IPS-->
               
@@ -406,7 +425,30 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
     <script>
-      const swiper = new Swiper('.swiper-container', {
+      //jquery
+      $(document).ready(function(){
+        /*
+        $(".laci-satu, .laci-dua, .laci-tiga").click(function(){
+          $(this).css("height", "380px");
+          $(this).click(function() {
+            $(this).css("height", "80px");
+          });
+        });
+        */
+       $(".laci-satu").click(function() {
+        $( ".laci-satu").each(function( ) {
+          if ( this.style.height !== "380px" ) {
+            this.style.height = "380px";
+            this.removeClass("h-100")
+          } else {
+            this.style.height = "80px";
+          }
+        });
+       })
+      });
+
+      //--------------
+       const swiper = new Swiper('.swiper-container', {
       // Optional parameters
       direction: 'horizontal',
       loop: true,

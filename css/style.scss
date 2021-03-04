@@ -426,28 +426,36 @@ nav {
             }
         }
         .box-caption {
-            
             p {
                 font-size: 16px;
             }
         }
         .card-footer {
-            display: none;
             transition: 1s;
             .laci-satu, .laci-dua, .laci-tiga {
-
-                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+                height: 80px;
+                margin-top: 40px;
                 max-width: 410px;
                 transition: 0.5s;
                 border-radius: 0px 0px 10px 10px;
-                a {
+                h4, p {
+                    margin-top: 22px;
                     color: white;
                     font-size: 23px;
+                    
+                    span {
+                        display: none;
+                    }
+                        
+                    
                 }
             }
             .laci-satu:hover, .laci-dua:hover, .laci-tiga:hover {
                 box-shadow: -1px 3px 21px 1px rgba(0,0,0,0.37);
             }
+            
 
         }
         .ipa {
@@ -817,7 +825,6 @@ a {
     transform: translateY(0px);
     opacity: 1;
 }
-//-------
 .reveal-right {
     position: relative;
     transform: translateX(-300px);
@@ -834,5 +841,8 @@ a {
 }
 .myBounce.active {
    animation: myBounce 2s  2s ;
+}
+.myBounce.active:hover {
+    animation: none!important;
 }
 
