@@ -1,4 +1,83 @@
 
+
+
+$(document).ready(function(){
+ $(".laci-satu-ipa").click(function() {
+  $(this).each(function( ) {
+    if (this.style.height !== "330px") {
+      this.style.height = "330px";
+      $(".laci-satu-ipa span").show(1000);
+      this.removeClass("h-100")
+    } else {
+      $(".laci-satu-ipa span").hide(1000);
+      this.style.height = "80px";
+    }
+  });
+ })
+ $(".laci-dua-ipa").click(function() {
+  $(this).each(function( ) {
+    if (this.style.height !== "330px") {
+      this.style.height = "330px";
+      $(".laci-dua-ipa span").show(1000);
+      this.removeClass("h-100")
+    } else {
+      $(".laci-dua-ipa span").hide(1000);
+      this.style.height = "80px";
+    }
+  });
+ })
+ $(".laci-tiga-ipa").click(function() {
+  $(this).each(function( ) {
+    if (this.style.height !== "330px") {
+      this.style.height = "330px";
+      $(".laci-tiga-ipa span").show(1000);
+      this.removeClass("h-100")
+    } else {
+      $(".laci-tiga-ipa span").hide(1000);
+      this.style.height = "80px";
+    }
+  });
+ })
+ $(".laci-satu-ips").click(function() {
+  $(this).each(function( ) {
+    if (this.style.height !== "330px") {
+      this.style.height = "330px";
+      $(".laci-satu-ips span").show(1000);
+      this.removeClass("h-100")
+    } else {
+      $(".laci-satu-ips span").hide(1000);
+      this.style.height = "80px";
+    }
+  });
+ })
+ $(".laci-dua-ips").click(function() {
+  $(this).each(function( ) {
+    if (this.style.height !== "330px") {
+      this.style.height = "330px";
+      $(".laci-dua-ips span").show(1000);
+      this.removeClass("h-100")
+    } else {
+      $(".laci-dua-ips span").hide(1000);
+      this.style.height = "80px";
+    }
+  });
+ })
+ $(".laci-tiga-ips").click(function() {
+  $(this).each(function( ) {
+    if (this.style.height !== "330px") {
+      this.style.height = "330px";
+      $(".laci-tiga-ips span").show(1000);
+      this.removeClass("h-100")
+    } else {
+      $(".laci-tiga-ips span").hide(1000);
+      this.style.height = "80px";
+    }
+  });
+ })
+});
+
+
+
 window.onscroll = function() {sekrol()};
 function sekrol() {
   var navBrand = document.getElementsByClassName("navbar-brand")[0];

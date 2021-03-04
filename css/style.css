@@ -227,9 +227,7 @@ nav ul li .nav-link:hover {
 
 .keunggulan .mybox {
   margin: auto;
-  max-width: 431px;
-  -webkit-box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.25);
-          box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.25);
+  max-width: 300px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   border-radius: 10px;
@@ -251,7 +249,8 @@ nav ul li .nav-link:hover {
 }
 
 .keunggulan .mybox .box-image img {
-  width: 190px;
+  width: 100px;
+  height: 100px;
 }
 
 .keunggulan .mybox .box-caption {
@@ -460,14 +459,13 @@ nav ul li .nav-link:hover {
 }
 
 .jurusan .box-jurusan {
-  max-width: 410px;
-  -webkit-box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.25);
-          box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.25);
+  margin: auto;
+  max-width: 380px;
   border-radius: 10px;
 }
 
 .jurusan .box-jurusan .box-title {
-  margin-bottom: 4em;
+  margin-bottom: 50px;
 }
 
 .jurusan .box-jurusan .box-title h4 {
@@ -475,12 +473,16 @@ nav ul li .nav-link:hover {
 }
 
 .jurusan .box-jurusan .box-image {
-  margin-bottom: 4em;
+  margin-bottom: 50px;
 }
 
 .jurusan .box-jurusan .box-image img {
-  width: 190px;
-  height: 190px;
+  width: 120px;
+  height: 120px;
+}
+
+.jurusan .box-jurusan .box-caption {
+  padding-bottom: 54px;
 }
 
 .jurusan .box-jurusan .box-caption p {
@@ -492,7 +494,7 @@ nav ul li .nav-link:hover {
   transition: 1s;
 }
 
-.jurusan .box-jurusan .card-footer .laci-satu, .jurusan .box-jurusan .card-footer .laci-dua, .jurusan .box-jurusan .card-footer .laci-tiga {
+.jurusan .box-jurusan .card-footer .laci-satu-ipa, .jurusan .box-jurusan .card-footer .laci-dua-ipa, .jurusan .box-jurusan .card-footer .laci-tiga-ipa, .jurusan .box-jurusan .card-footer .laci-satu-ips, .jurusan .box-jurusan .card-footer .laci-dua-ips, .jurusan .box-jurusan .card-footer .laci-tiga-ips {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,48 +502,30 @@ nav ul li .nav-link:hover {
       -ms-flex-pack: center;
           justify-content: center;
   height: 80px;
-  margin-top: 40px;
+  margin-top: 25px;
   max-width: 410px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  border-radius: 0px 0px 10px 10px;
+  padding: 0 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
-.jurusan .box-jurusan .card-footer .laci-satu h4, .jurusan .box-jurusan .card-footer .laci-satu p, .jurusan .box-jurusan .card-footer .laci-dua h4, .jurusan .box-jurusan .card-footer .laci-dua p, .jurusan .box-jurusan .card-footer .laci-tiga h4, .jurusan .box-jurusan .card-footer .laci-tiga p {
+.jurusan .box-jurusan .card-footer .laci-satu-ipa p, .jurusan .box-jurusan .card-footer .laci-dua-ipa p, .jurusan .box-jurusan .card-footer .laci-tiga-ipa p, .jurusan .box-jurusan .card-footer .laci-satu-ips p, .jurusan .box-jurusan .card-footer .laci-dua-ips p, .jurusan .box-jurusan .card-footer .laci-tiga-ips p {
+  font-weight: 600;
   margin-top: 22px;
   color: white;
   font-size: 23px;
 }
 
-.jurusan .box-jurusan .card-footer .laci-satu h4 span, .jurusan .box-jurusan .card-footer .laci-satu p span, .jurusan .box-jurusan .card-footer .laci-dua h4 span, .jurusan .box-jurusan .card-footer .laci-dua p span, .jurusan .box-jurusan .card-footer .laci-tiga h4 span, .jurusan .box-jurusan .card-footer .laci-tiga p span {
+.jurusan .box-jurusan .card-footer .laci-satu-ipa p span, .jurusan .box-jurusan .card-footer .laci-dua-ipa p span, .jurusan .box-jurusan .card-footer .laci-tiga-ipa p span, .jurusan .box-jurusan .card-footer .laci-satu-ips p span, .jurusan .box-jurusan .card-footer .laci-dua-ips p span, .jurusan .box-jurusan .card-footer .laci-tiga-ips p span {
+  font-weight: normal;
+  font-size: 15px;
   display: none;
 }
 
-.jurusan .box-jurusan .card-footer .laci-satu:hover, .jurusan .box-jurusan .card-footer .laci-dua:hover, .jurusan .box-jurusan .card-footer .laci-tiga:hover {
-  -webkit-box-shadow: -1px 3px 21px 1px rgba(0, 0, 0, 0.37);
-          box-shadow: -1px 3px 21px 1px rgba(0, 0, 0, 0.37);
-}
-
-.jurusan .box-jurusan .ipa {
-  margin-top: 40px;
-}
-
-@-webkit-keyframes mySlide {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes mySlide {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.jurusan .box-jurusan .card-footer .laci-tiga-ipa, .jurusan .box-jurusan .card-footer .laci-tiga-ips {
+  margin-bottom: 25px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -582,6 +566,9 @@ nav ul li .nav-link:hover {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 1em 0;
+  }
+  .pendaftaran .kedua {
+    margin-top: 50px;
   }
 }
 
@@ -630,7 +617,7 @@ nav ul li .nav-link:hover {
 }
 
 .judulBesar {
-  font-size: 60px;
+  font-size: 55px;
   font-weight: normal;
 }
 
@@ -1050,6 +1037,24 @@ a {
   100% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes mySlide {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes mySlide {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 

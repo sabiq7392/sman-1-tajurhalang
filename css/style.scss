@@ -196,8 +196,7 @@ nav {
     }
     .mybox {
         margin: auto;
-        max-width: 431px;
-        box-shadow: $myshadow;
+        max-width: 300px;
         transition: 0.3s;
         border-radius: 10px;
         color: white;
@@ -213,7 +212,8 @@ nav {
         .box-image {
             padding: 2em ;
            img {
-               width: 190px;
+               width: 100px;
+               height: 100px;
            }
         }
         .box-caption {
@@ -409,70 +409,66 @@ nav {
         }
     }
     .box-jurusan {
-        max-width: 410px;
-        box-shadow: $myshadow;
+        margin: auto;
+        max-width: 380px;
         border-radius: 10px;
         .box-title {
-            margin-bottom: 4em;
+            margin-bottom: 50px;
             h4 {
                 font-size: 30px;
             }
         }
         .box-image {
-            margin-bottom: 4em;
+            margin-bottom: 50px;
             img {
-                width: 190px;
-                height: 190px;
+                width: 120px;
+                height: 120px;
             }
         }
         .box-caption {
+            padding-bottom: 54px;
             p {
                 font-size: 16px;
             }
         }
         .card-footer {
+            
             transition: 1s;
-            .laci-satu, .laci-dua, .laci-tiga {
+            .laci-satu-ipa, .laci-dua-ipa, .laci-tiga-ipa, .laci-satu-ips, .laci-dua-ips, .laci-tiga-ips {
                 display: flex;
                 justify-content: center;
                 height: 80px;
-                margin-top: 40px;
+                margin-top: 25px;
                 max-width: 410px;
                 transition: 0.5s;
-                border-radius: 0px 0px 10px 10px;
-                h4, p {
+                padding: 0 10px;
+                border-bottom: 1px solid rgba(0,0, 0, 0.15);
+                cursor: pointer;
+                p {
+                    font-weight: 600;
                     margin-top: 22px;
                     color: white;
                     font-size: 23px;
                     
                     span {
+                        font-weight: normal;
+                        font-size: 15px;
                         display: none;
                     }
                         
                     
                 }
             }
-            .laci-satu:hover, .laci-dua:hover, .laci-tiga:hover {
-                box-shadow: -1px 3px 21px 1px rgba(0,0,0,0.37);
+            .laci-tiga-ipa, .laci-tiga-ips {
+                margin-bottom: 25px;
             }
-            
 
-        }
-        .ipa {
-            margin-top: 40px;
         }
     }
     
 }
 
-@keyframes mySlide {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
+
   
 
 // media quaries
@@ -525,6 +521,11 @@ nav {
              }
         }
     }
+    .pendaftaran {
+        .kedua {
+            margin-top: 50px;
+        }
+    }
 }
 @media screen and (max-width: 768px) {
     .keunggulan {
@@ -538,6 +539,7 @@ nav {
         }
   
     }
+
     .prestasi {
         .box-prestasi {
             .cutterBottom {
@@ -605,7 +607,7 @@ nav {
 
 // Spawn Class 
 .judulBesar {
-    font-size: 60px;
+    font-size: 55px;
     font-weight: normal;
 }
 .paragrafKecil {
@@ -808,6 +810,14 @@ a {
         transform: translateY(0px)
     }
 
+}
+@keyframes mySlide { // keyframes buat font slider
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 // activeNoClass 
 

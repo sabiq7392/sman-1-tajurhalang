@@ -34,7 +34,7 @@
             </div>
         </div>
     </header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-xl">
             <a class="navbar-brand" href="#"><img src="img/LogoBrand.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -316,7 +316,7 @@
                 <div class="box-image">
                   <img src="/img/atom-white.png" alt="">
                 </div> <!--box image-->
-                <div class="box-caption pl-4 pr-4" style="padding-bottom: 15px;">
+                <div class="box-caption pl-4 pr-4">
                   <p class="">
                     Di jurusan ini kita lebih banyak mempelajari ilmu sains, mempelajari apa 
                     itu biologi, kimia, fisika. Bagaimana mereka tercipta, apa fungsi-fungsi mereka,
@@ -324,19 +324,42 @@
                   </p>
                 </div> <!---box caption-->
                 <div class="card-footer ipa">
-                  <div class="laci-satu myBg-Red ">
+                  <div class="laci-satu-ipa myBg-Red ">
                     <p>Biologi
                       <br><br>
-                      <span class="ini">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quas ad inventore veniam necessitatibus optio repudiandae, quisquam, blanditiis consequatur corporis laudantium culpa illo nobis non accusantium eligendi. Sunt, vero ducimus?</span>
+                      <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quos quas ad inventore veniam necessitatibus optio repudiandae, 
+                        quisquam, blanditiis consequatur corporis laudantium culpa illo
+                        nobis non accusantium eligendi. Sunt, vero ducimus?
+                      </span>
                     </p>
                     
                   </div>
-                  <div class="laci-dua myBg-Red">
-                    <h4>Fisika</h4>
+                  <div class="laci-dua-ipa myBg-Red">
+                    <p>
+                      Fisika
+                      <br><br>
+                      <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quos quas ad inventore veniam necessitatibus optio repudiandae,
+                        quisquam, blanditiis consequatur corporis laudantium culpa illo nobis 
+                        non accusantium eligendi. Sunt, vero ducimus?
+                      </span>
+                    </p>
                     
                   </div>
-                  <div class="laci-tiga myBg-Red">
-                    <h4 >Kimia</h4>
+                  <div class="laci-tiga-ipa myBg-Red">
+                    <p>
+                      Kimia
+                      <br><br>
+                      <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quos quas ad inventore veniam necessitatibus optio repudiandae,
+                        quisquam, blanditiis consequatur corporis laudantium culpa illo nobis 
+                        non accusantium eligendi. Sunt, vero ducimus?
+                      </span>
+                    </p>
                     
                   </div>
                 </div>
@@ -360,14 +383,41 @@
                   </p>
                 </div> <!---box caption-->
                 <div class="card-footer ips">
-                  <div class="laci-satu  myBg-Blue">
-                    <h4 >Sosialogi</h4>
+                  <div class="laci-satu-ips  myBg-Blue">
+                    <p >
+                      Sosialogi
+                      <br><br>
+                      <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quos quas ad inventore veniam necessitatibus optio repudiandae,
+                        quisquam, blanditiis consequatur corporis laudantium culpa illo nobis 
+                        non accusantium eligendi. Sunt, vero ducimus?
+                      </span>
+                    </p>
                   </div>
-                  <div class="laci-dua  myBg-Blue">
-                    <h4 >Sejarah</h4>
+                  <div class="laci-dua-ips  myBg-Blue">
+                    <p>
+                      Sejarah
+                      <br><br>
+                      <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quos quas ad inventore veniam necessitatibus optio repudiandae,
+                        quisquam, blanditiis consequatur corporis laudantium culpa illo nobis 
+                        non accusantium eligendi. Sunt, vero ducimus?
+                      </span>
+                    </p>
                   </div>
-                  <div class="laci-tiga  myBg-Blue">
-                    <h4 >Ekonomi</h4>
+                  <div class="laci-tiga-ips  myBg-Blue">
+                    <p>
+                      Ekonomi
+                      <br><br>
+                      <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quos quas ad inventore veniam necessitatibus optio repudiandae,
+                        quisquam, blanditiis consequatur corporis laudantium culpa illo nobis 
+                        non accusantium eligendi. Sunt, vero ducimus?
+                      </span>
+                    </p>
                   </div>
                 </div>
               </div> <!--box jurusan IPS-->
@@ -425,30 +475,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
     <script>
-      //jquery
-      $(document).ready(function(){
-        /*
-        $(".laci-satu, .laci-dua, .laci-tiga").click(function(){
-          $(this).css("height", "380px");
-          $(this).click(function() {
-            $(this).css("height", "80px");
-          });
-        });
-        */
-       $(".laci-satu").click(function() {
-        $( ".laci-satu").each(function( ) {
-          if ( this.style.height !== "380px" ) {
-            this.style.height = "380px";
-            this.removeClass("h-100")
-          } else {
-            this.style.height = "80px";
-          }
-        });
-       })
-      });
-
-      //--------------
-       const swiper = new Swiper('.swiper-container', {
+      const swiper = new Swiper('.swiper-container', {
       // Optional parameters
       direction: 'horizontal',
       loop: true,
