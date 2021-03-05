@@ -16,7 +16,7 @@ $fontbesar:32px;
 }
 
 body {
-    background-color: #f5f5f5;
+    background-color: #f4f4f4;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -195,16 +195,17 @@ nav {
             }
     }
     .mybox {
+        border: 2px solid #217AD3;
         margin: auto;
-        max-width: 300px;
+        max-width: 280px;
         transition: 0.3s;
         border-radius: 10px;
-        color: white;
         text-align: center;
         .box-title {
             padding-top: 2em ;
 
             h4 {
+                color: $myblue;
                 font-weight: 500;
                 font-size: 30px;
             }
@@ -212,8 +213,8 @@ nav {
         .box-image {
             padding: 2em ;
            img {
-               width: 100px;
-               height: 100px;
+               width: 150px;
+               height: 150px;
            }
         }
         .box-caption {
@@ -221,21 +222,23 @@ nav {
             padding-bottom: 1em;
             
             p {
-                color: rgba(#fff,0.9);
+                color: $myblue;
                 font-size: 16px;
             }
         }
     }
     .mybox:hover {
-       transform: scale(1.02);
+        box-shadow: 1px 10px 78px -3px rgba(0,0,0,0.35);
+        transform: scale(1.01);
     }
     .swiper-container {
+        box-shadow: $myshadow;
         margin-top: 3em;
         display: none;
         width: 70vw;
         height: fit-content;
         .swiper-pagination-bullet {
-            background-color: white;
+            background-color: rgba(0,0,0,0.35);
             width: 15px;
             height: 15px;
             margin-top: 1em;
@@ -245,20 +248,19 @@ nav {
             .swiper-slide {
                 
                 .myboxMob {
-    
-                    box-shadow: $myshadow;
-                    border-radius: 5px;
+                    
+                    border: 2px solid $myblue;
                     text-align: center;
                     display: block;
                     transition: 0.3s;
-                    height: 470px;
+                    height: 400px;
                     width: 70vw!important;
     
                     .box-title {
                         padding-top: 2em ;
                 
                         h4 {
-                            color: white;
+                            color: $myblue;
                             font-weight: 500;
                             font-size: 30px;
                         }
@@ -266,7 +268,7 @@ nav {
                     .box-image {
                         padding: 2em ;
                         img {
-                            width: 150px;
+                            width: 100px;
                         }
                     }
                     .box-caption {
@@ -274,7 +276,7 @@ nav {
                         padding-bottom: 1em;
                         
                         p {
-                            color: rgba(#fff,0.9);
+                            color: $myblue;
                             font-size: 16px;
                         }
                     }
@@ -311,7 +313,6 @@ nav {
     .container-fluid {
         
         padding: 0!important;
-        min-width: 200px;
     }
     .pertama {
         margin-top: 0.5em;
@@ -324,7 +325,7 @@ nav {
         }
     }
     .kedua {
-        margin-top: 0.5em;
+        margin-top: 30px;
         a {
             transition: 0.3s;
             padding: 0.7em 1em;
@@ -462,6 +463,12 @@ nav {
             .laci-tiga-ipa, .laci-tiga-ips {
                 margin-bottom: 25px;
             }
+            .laci-satu-ipa:hover, .laci-dua-ipa:hover, .laci-tiga-ipa:hover {
+                background-color: #e63633;
+            }
+            .laci-satu-ips:hover, .laci-dua-ips:hover, .laci-tiga-ips:hover {
+                background-color: #0f67c0;
+            }
 
         }
     }
@@ -595,6 +602,11 @@ nav {
         .pertama {
             h1 {
                 font-size: 40px!important;
+            }
+        }
+        .kedua {
+            a {
+                padding: 10px 20px!important;
             }
         }
             

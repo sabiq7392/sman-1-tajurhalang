@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #f5f5f5;
+  background-color: #f4f4f4;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -226,12 +226,12 @@ nav ul li .nav-link:hover {
 }
 
 .keunggulan .mybox {
+  border: 2px solid #217AD3;
   margin: auto;
-  max-width: 300px;
+  max-width: 280px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   border-radius: 10px;
-  color: white;
   text-align: center;
 }
 
@@ -240,6 +240,7 @@ nav ul li .nav-link:hover {
 }
 
 .keunggulan .mybox .box-title h4 {
+  color: #217AD3;
   font-weight: 500;
   font-size: 30px;
 }
@@ -249,8 +250,8 @@ nav ul li .nav-link:hover {
 }
 
 .keunggulan .mybox .box-image img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 }
 
 .keunggulan .mybox .box-caption {
@@ -259,16 +260,20 @@ nav ul li .nav-link:hover {
 }
 
 .keunggulan .mybox .box-caption p {
-  color: rgba(255, 255, 255, 0.9);
+  color: #217AD3;
   font-size: 16px;
 }
 
 .keunggulan .mybox:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  -webkit-box-shadow: 1px 10px 78px -3px rgba(0, 0, 0, 0.35);
+          box-shadow: 1px 10px 78px -3px rgba(0, 0, 0, 0.35);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 .keunggulan .swiper-container {
+  -webkit-box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.25);
   margin-top: 3em;
   display: none;
   width: 70vw;
@@ -278,21 +283,19 @@ nav ul li .nav-link:hover {
 }
 
 .keunggulan .swiper-container .swiper-pagination-bullet {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.35);
   width: 15px;
   height: 15px;
   margin-top: 1em;
 }
 
 .keunggulan .swiper-container .swiper-wrapper .swiper-slide .myboxMob {
-  -webkit-box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.25);
-          box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
+  border: 2px solid #217AD3;
   text-align: center;
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  height: 470px;
+  height: 400px;
   width: 70vw !important;
 }
 
@@ -301,7 +304,7 @@ nav ul li .nav-link:hover {
 }
 
 .keunggulan .swiper-container .swiper-wrapper .swiper-slide .myboxMob .box-title h4 {
-  color: white;
+  color: #217AD3;
   font-weight: 500;
   font-size: 30px;
 }
@@ -311,7 +314,7 @@ nav ul li .nav-link:hover {
 }
 
 .keunggulan .swiper-container .swiper-wrapper .swiper-slide .myboxMob .box-image img {
-  width: 150px;
+  width: 100px;
 }
 
 .keunggulan .swiper-container .swiper-wrapper .swiper-slide .myboxMob .box-caption {
@@ -320,7 +323,7 @@ nav ul li .nav-link:hover {
 }
 
 .keunggulan .swiper-container .swiper-wrapper .swiper-slide .myboxMob .box-caption p {
-  color: rgba(255, 255, 255, 0.9);
+  color: #217AD3;
   font-size: 16px;
 }
 
@@ -354,7 +357,6 @@ nav ul li .nav-link:hover {
 
 .pendaftaran .container-fluid {
   padding: 0 !important;
-  min-width: 200px;
 }
 
 .pendaftaran .pertama {
@@ -368,7 +370,7 @@ nav ul li .nav-link:hover {
 }
 
 .pendaftaran .kedua {
-  margin-top: 0.5em;
+  margin-top: 30px;
 }
 
 .pendaftaran .kedua a {
@@ -528,6 +530,14 @@ nav ul li .nav-link:hover {
   margin-bottom: 25px;
 }
 
+.jurusan .box-jurusan .card-footer .laci-satu-ipa:hover, .jurusan .box-jurusan .card-footer .laci-dua-ipa:hover, .jurusan .box-jurusan .card-footer .laci-tiga-ipa:hover {
+  background-color: #e63633;
+}
+
+.jurusan .box-jurusan .card-footer .laci-satu-ips:hover, .jurusan .box-jurusan .card-footer .laci-dua-ips:hover, .jurusan .box-jurusan .card-footer .laci-tiga-ips:hover {
+  background-color: #0f67c0;
+}
+
 @media screen and (max-width: 1200px) {
   .kedua {
     margin-top: 3em;
@@ -613,6 +623,9 @@ nav ul li .nav-link:hover {
   }
   .pendaftaran .pertama h1 {
     font-size: 40px !important;
+  }
+  .pendaftaran .kedua a {
+    padding: 10px 20px !important;
   }
 }
 

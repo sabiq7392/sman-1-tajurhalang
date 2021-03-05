@@ -89,7 +89,7 @@
           </div>
         </div>
       </div>
-      <div class="blankDiv"></div>
+      <div class="blankDiv"></div> <!--container kosong kecil-->
       <div class="mycontainer position-relative bg-primary ">
         <div class="totop-wrapper">
           <a href="#" onclick="scrolltoTop()" class="totop"><i class="fas fa-arrow-up"></i></a>
@@ -108,12 +108,12 @@
           </div>
               <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 mt-5 reveal-up justify-content-center">
                 <div class="col mb-4">
-                  <div class="mybox myBg-Orange h-100">
+                  <div class="mybox h-100">
                     <div class="box-title">
                       <h4>Wifi Gratis</h4>
                     </div> <!--title-->
                     <div class="box-image">
-                      <img src="/img/wifi-white.png" alt="Wifi di semua tempat">
+                      <img src="/img/wifi-mode.png" alt="Wifi di semua tempat">
                     </div>
                     <div class="box-caption">
                       <p>
@@ -124,15 +124,15 @@
                   </div>
                 </div> <!--col-->
                 <div class="col mb-4">
-                  <div class="mybox myBg-Red h-100 ">
+                  <div class="mybox h-100 "  style="border: 2px solid #eb4d4b;">
                     <div class="box-title">
-                      <h4>Terakreditasi A</h4>
+                      <h4 style="color: #eb4d4b;">Terakreditasi A</h4>
                     </div> <!--title-->
                     <div class="box-image">
-                      <img src="/img/medal-white.png" alt="Terakreditasi A">
+                      <img src="/img/best-mode.png" alt="Terakreditasi A">
                     </div>
                     <div class="box-caption">
-                      <p>
+                      <p style="color: #eb4d4b;">
                         Sekolah kami telah terakreditasi A nilai 
                         tertinggi yang diberikan oleh Dinas Pendidikan RI
                       </p>
@@ -140,12 +140,12 @@
                   </div>
                 </div> <!--col-->
                 <div class="col mb-4">
-                  <div class="mybox myBg-Blue h-100 ">
+                  <div class="mybox h-100 ">
                     <div class="box-title">
                       <h4>Laboratorium</h4>
                     </div> <!--title-->
                     <div class="box-image">
-                      <img src="/img/test-white.png" alt="Laboratorium">
+                      <img src="/img/microscope-mode.png" alt="Laboratorium">
                     </div>
                     <div class="box-caption">
                       <p>
@@ -162,12 +162,12 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
-                <div class="myboxMob myBg-Blue">
+                <div class="myboxMob ">
                   <div class="box-title">
                     <h4>Laboratorium</h4>
                   </div> <!--title-->
                   <div class="box-image">
-                    <img src="/img/test-white.png" alt="Laboratorium">
+                    <img src="/img/microscope-mode.png" alt="Laboratorium">
                   </div>
                   <div class="box-caption">
                     <p>
@@ -178,15 +178,15 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="myboxMob myBg-Red">
+                <div class="myboxMob" style="border:2px solid #eb4d4b;">
                   <div class="box-title">
-                    <h4>Terakreditasi A</h4>
+                    <h4 style="color: #eb4d4b;">Terakreditasi A</h4>
                   </div> <!--title-->
                   <div class="box-image">
-                    <img src="/img/medal-white.png" alt="Terakreditasi A">
+                    <img src="/img/best-mode.png" alt="Terakreditasi A">
                   </div>
                   <div class="box-caption">
-                    <p>
+                    <p style="color: #eb4d4b;">
                       Sekolah kami telah terakreditasi A nilai 
                       tertinggi yang diberikan oleh Dinas Pendidikan RI
                     </p>
@@ -194,12 +194,12 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="myboxMob myBg-Orange">
+                <div class="myboxMob">
                   <div class="box-title">
                     <h4>Wifi Gratis</h4>
                   </div> <!--title-->
                   <div class="box-image">
-                    <img src="/img/wifi-white.png" alt="Wifi di semua tempat">
+                    <img src="/img/wifi-mode.png" alt="Wifi di semua tempat">
                   </div>
                   <div class="box-caption">
                     <p>
@@ -210,7 +210,7 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination" style="color: black;"></div>
           </div> <!---swiper container-->
         </div> <!---container-->
       </div> <!--Keunggulan-->
@@ -479,16 +479,11 @@
       // Optional parameters
       direction: 'horizontal',
       loop: true,
-      effect: 'cube',
-      grabCursor: true,
-      cubeEffect: {
-      shadow: true,
-      slideShadows: true,
-      shadowOffset: 20,
-      shadowScale: 0.94,
-      },
+      slidesPerView: 'auto',
+      spaceBetween: 30,
       pagination: {
-      el: '.swiper-pagination',
+        el: '.swiper-pagination',
+        clickable: true,
       },
       autoplay: {
       delay: 5000,
