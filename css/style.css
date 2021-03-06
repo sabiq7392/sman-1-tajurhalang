@@ -362,21 +362,33 @@ nav ul li .nav-link:hover {
   padding: 0 !important;
 }
 
-.pendaftaran .pertama {
-  margin-top: 20px;
+.pendaftaran .ppdb {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.pendaftaran .pertama h1 {
+.pendaftaran .ppdb .pertama {
+  margin-right: 50px;
+}
+
+.pendaftaran .ppdb .pertama h1 {
   font-weight: medium;
   font-size: 50px;
   margin: 0 !important;
 }
 
-.pendaftaran .kedua {
-  margin-top: 20px;
-}
-
-.pendaftaran .kedua a {
+.pendaftaran .ppdb .kedua a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   padding: 0.7em 1em;
@@ -389,7 +401,7 @@ nav ul li .nav-link:hover {
   color: black;
 }
 
-.pendaftaran .kedua a:hover {
+.pendaftaran .ppdb .kedua a:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
@@ -770,15 +782,6 @@ nav ul li .nav-link:hover {
   font-size: 24px;
 }
 
-@media screen and (max-width: 1200px) {
-  .kedua {
-    margin-top: 3em;
-  }
-  .kedua a {
-    padding: 0.7em 4em !important;
-  }
-}
-
 @media screen and (max-width: 992px) {
   header .header-link-wrapper div a i {
     font-size: 22px;
@@ -809,9 +812,6 @@ nav ul li .nav-link:hover {
             justify-content: center;
     padding: 1em 0;
   }
-  .pendaftaran .kedua {
-    margin-top: 50px;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -820,6 +820,18 @@ nav ul li .nav-link:hover {
   }
   .keunggulan .swiper-container {
     display: block !important;
+  }
+  .pendaftaran .ppdb {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .pendaftaran .ppdb .pertama {
+    margin: 0;
+  }
+  .pendaftaran .ppdb .kedua {
+    margin-top: 30px;
   }
   .prestasi .box-prestasi .cutterBottom {
     margin-top: -69px !important;
@@ -858,12 +870,6 @@ nav ul li .nav-link:hover {
   }
   .carousel-inner .mycarousel-caption h5, .carousel-inner .mycarousel-caption p {
     font-size: 20px !important;
-  }
-  .pendaftaran .kedua {
-    margin: 1em  auto;
-  }
-  .pendaftaran .kedua a {
-    padding: 10px 20px !important;
   }
   .prestasi .box-prestasi {
     margin: auto;
