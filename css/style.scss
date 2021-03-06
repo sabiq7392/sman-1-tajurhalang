@@ -480,7 +480,7 @@ nav {
             color: $myblue;
         }
     }
-    .box-jurusan {
+    .box-eskul {
         margin: auto;
         max-width: 300px;
         .img-box {
@@ -507,7 +507,7 @@ nav {
             transform: skewY(6deg)!important;
             background-color: white!important;
         }
-        .box-jurusan-caption {
+        .box-eskul-caption {
             z-index: 2;
             top: -51px;
             text-align: center;
@@ -834,6 +834,11 @@ nav {
                         }
                     }
             }
+        }
+    }
+    .eskul {
+        h1 {
+            font-size: 30px!important;
         }
     }
 }

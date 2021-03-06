@@ -560,23 +560,23 @@ nav ul li .nav-link:hover {
   color: #217AD3;
 }
 
-.eskul .box-jurusan {
+.eskul .box-eskul {
   margin: auto;
   max-width: 300px;
 }
 
-.eskul .box-jurusan .img-box {
+.eskul .box-eskul .img-box {
   -webkit-box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.25);
           box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.25);
 }
 
-.eskul .box-jurusan .img-box img {
+.eskul .box-eskul .img-box img {
   z-index: -1;
   width: 100%;
   height: 355px;
 }
 
-.eskul .box-jurusan .cutterBottom {
+.eskul .box-eskul .cutterBottom {
   background-color: white;
   width: 100%;
   margin-top: -70px;
@@ -585,7 +585,7 @@ nav ul li .nav-link:hover {
   position: relative;
 }
 
-.eskul .box-jurusan .cutterBottom-dua {
+.eskul .box-eskul .cutterBottom-dua {
   background-color: white;
   width: 100%;
   margin-top: -92px;
@@ -595,14 +595,14 @@ nav ul li .nav-link:hover {
   background-color: white !important;
 }
 
-.eskul .box-jurusan .box-jurusan-caption {
+.eskul .box-eskul .box-eskul-caption {
   z-index: 2;
   top: -51px;
   text-align: center;
   position: relative;
 }
 
-.eskul .box-jurusan .box-jurusan-caption h4 {
+.eskul .box-eskul .box-eskul-caption h4 {
   margin-top: 20px;
   color: #217AD3;
   font-weight: bold;
@@ -893,6 +893,9 @@ nav ul li .nav-link:hover {
   }
   .jurusan .box-jurusan .card-footer p span {
     font-size: 12px;
+  }
+  .eskul h1 {
+    font-size: 30px !important;
   }
 }
 
