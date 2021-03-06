@@ -4,8 +4,8 @@
 $(document).ready(function(){
  $(".laci-satu-ipa").click(function() {
   $(this).each(function( ) {
-    if (this.style.height !== "200px") {
-      this.style.height = "200px";
+    if (this.style.height !== "250px") {
+      this.style.height = "250px";
       $(".laci-satu-ipa span").show(1000);
       this.removeClass("h-100")
     } else {
@@ -16,8 +16,8 @@ $(document).ready(function(){
  })
  $(".laci-dua-ipa").click(function() {
   $(this).each(function( ) {
-    if (this.style.height !== "200px") {
-      this.style.height = "200px";
+    if (this.style.height !== "250px") {
+      this.style.height = "250px";
       $(".laci-dua-ipa span").show(1000);
       this.removeClass("h-100")
     } else {
@@ -28,8 +28,8 @@ $(document).ready(function(){
  })
  $(".laci-tiga-ipa").click(function() {
   $(this).each(function( ) {
-    if (this.style.height !== "200px") {
-      this.style.height = "200px";
+    if (this.style.height !== "250px") {
+      this.style.height = "250px";
       $(".laci-tiga-ipa span").show(1000);
       this.removeClass("h-100")
     } else {
@@ -40,8 +40,8 @@ $(document).ready(function(){
  })
  $(".laci-satu-ips").click(function() {
   $(this).each(function( ) {
-    if (this.style.height !== "200px") {
-      this.style.height = "200px";
+    if (this.style.height !== "250px") {
+      this.style.height = "250px";
       $(".laci-satu-ips span").show(1000);
       this.removeClass("h-100")
     } else {
@@ -52,8 +52,8 @@ $(document).ready(function(){
  })
  $(".laci-dua-ips").click(function() {
   $(this).each(function( ) {
-    if (this.style.height !== "200px") {
-      this.style.height = "200px";
+    if (this.style.height !== "250px") {
+      this.style.height = "250px";
       $(".laci-dua-ips span").show(1000);
       this.removeClass("h-100")
     } else {
@@ -64,8 +64,8 @@ $(document).ready(function(){
  })
  $(".laci-tiga-ips").click(function() {
   $(this).each(function( ) {
-    if (this.style.height !== "200px") {
-      this.style.height = "200px";
+    if (this.style.height !== "250px") {
+      this.style.height = "250px";
       $(".laci-tiga-ips span").show(1000);
       this.removeClass("h-100")
     } else {
