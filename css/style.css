@@ -5,8 +5,12 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #f4f4f4;
+  background-color: #ebebeb;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -231,12 +235,11 @@ nav ul li .nav-link:hover {
   max-width: 280px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  border-radius: 10px;
   text-align: center;
 }
 
 .keunggulan .mybox .box-title {
-  padding-top: 2em;
+  padding: 10px 0;
 }
 
 .keunggulan .mybox .box-title h4 {
@@ -246,7 +249,7 @@ nav ul li .nav-link:hover {
 }
 
 .keunggulan .mybox .box-image {
-  padding: 2em;
+  padding: 30px;
 }
 
 .keunggulan .mybox .box-image img {
@@ -360,7 +363,7 @@ nav ul li .nav-link:hover {
 }
 
 .pendaftaran .pertama {
-  margin-top: 0.5em;
+  margin-top: 20px;
 }
 
 .pendaftaran .pertama h1 {
@@ -370,7 +373,7 @@ nav ul li .nav-link:hover {
 }
 
 .pendaftaran .kedua {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .pendaftaran .kedua a {
@@ -453,7 +456,6 @@ nav ul li .nav-link:hover {
 
 .jurusan {
   max-width: 1366px !important;
-  height: 3000px;
 }
 
 .jurusan .jurusanTitle h1 span {
@@ -471,7 +473,7 @@ nav ul li .nav-link:hover {
 }
 
 .jurusan .box-jurusan .box-title h4 {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .jurusan .box-jurusan .box-image {
@@ -488,7 +490,7 @@ nav ul li .nav-link:hover {
 }
 
 .jurusan .box-jurusan .box-caption p {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .jurusan .box-jurusan .card-footer {
@@ -503,31 +505,31 @@ nav ul li .nav-link:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 80px;
-  margin-top: 25px;
+  height: 50px;
   max-width: 410px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  padding: 0 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  margin-top: 5px;
   cursor: pointer;
 }
 
 .jurusan .box-jurusan .card-footer .laci-satu-ipa p, .jurusan .box-jurusan .card-footer .laci-dua-ipa p, .jurusan .box-jurusan .card-footer .laci-tiga-ipa p, .jurusan .box-jurusan .card-footer .laci-satu-ips p, .jurusan .box-jurusan .card-footer .laci-dua-ips p, .jurusan .box-jurusan .card-footer .laci-tiga-ips p {
+  padding: 0 15px;
+  margin-top: 12px;
   font-weight: 600;
-  margin-top: 22px;
   color: white;
-  font-size: 23px;
+  font-size: 17px;
 }
 
 .jurusan .box-jurusan .card-footer .laci-satu-ipa p span, .jurusan .box-jurusan .card-footer .laci-dua-ipa p span, .jurusan .box-jurusan .card-footer .laci-tiga-ipa p span, .jurusan .box-jurusan .card-footer .laci-satu-ips p span, .jurusan .box-jurusan .card-footer .laci-dua-ips p span, .jurusan .box-jurusan .card-footer .laci-tiga-ips p span {
   font-weight: normal;
-  font-size: 15px;
+  font-size: 12px;
   display: none;
 }
 
 .jurusan .box-jurusan .card-footer .laci-tiga-ipa, .jurusan .box-jurusan .card-footer .laci-tiga-ips {
-  margin-bottom: 25px;
+  margin-bottom: 5px;
 }
 
 .jurusan .box-jurusan .card-footer .laci-satu-ipa:hover, .jurusan .box-jurusan .card-footer .laci-dua-ipa:hover, .jurusan .box-jurusan .card-footer .laci-tiga-ipa:hover {
@@ -536,6 +538,236 @@ nav ul li .nav-link:hover {
 
 .jurusan .box-jurusan .card-footer .laci-satu-ips:hover, .jurusan .box-jurusan .card-footer .laci-dua-ips:hover, .jurusan .box-jurusan .card-footer .laci-tiga-ips:hover {
   background-color: #0f67c0;
+}
+
+.eskul {
+  max-width: 1366px;
+}
+
+.eskul h1 span {
+  color: #217AD3;
+}
+
+.eskul .box-jurusan {
+  margin: auto;
+  max-width: 300px;
+}
+
+.eskul .box-jurusan .img-box {
+  -webkit-box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.25);
+}
+
+.eskul .box-jurusan .img-box img {
+  z-index: -1;
+  width: 100%;
+  height: 355px;
+}
+
+.eskul .box-jurusan .cutterBottom {
+  background-color: white;
+  width: 100%;
+  margin-top: -70px;
+  height: 70px;
+  z-index: 1;
+  position: relative;
+}
+
+.eskul .box-jurusan .cutterBottom-dua {
+  background-color: white;
+  width: 100%;
+  margin-top: -92px;
+  height: 70px;
+  -webkit-transform: skewY(6deg) !important;
+          transform: skewY(6deg) !important;
+  background-color: white !important;
+}
+
+.eskul .box-jurusan .box-jurusan-caption {
+  z-index: 2;
+  top: -51px;
+  text-align: center;
+  position: relative;
+}
+
+.eskul .box-jurusan .box-jurusan-caption h4 {
+  margin-top: 20px;
+  color: #217AD3;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.artikel {
+  max-width: 1366px;
+}
+
+.artikel h1 span {
+  color: #217AD3;
+}
+
+.artikel .kepsek {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #DCDCDC;
+}
+
+.artikel .kepsek .title {
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.artikel .kepsek .title h3 {
+  font-weight: normal !important;
+  color: #217AD3;
+  font-size: 30px;
+}
+
+.artikel .kepsek .image img {
+  width: 300px;
+  height: 300px;
+}
+
+.artikel .kepsek .caption {
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.artikel .kepsek .caption h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.artikel .kepsek-paragraf {
+  margin-top: 35px;
+}
+
+.artikel .kepsek-paragraf p {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.artikel .mybox {
+  border-radius: 10px;
+  border: 1px solid #DCDCDC;
+  margin: auto;
+  max-width: 280px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.artikel .mybox img {
+  width: 100%;
+  height: 250px;
+}
+
+.artikel .mybox .box-title {
+  padding: 1em 0.7em;
+}
+
+.artikel .mybox .box-title h4 {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.artikel .mybox .box-caption {
+  padding: 0em 0.7em;
+  padding-bottom: 1em;
+}
+
+.artikel .mybox .box-caption p {
+  font-size: 16px;
+}
+
+.artikel .mybox:hover {
+  -webkit-box-shadow: 1px 10px 78px -3px rgba(0, 0, 0, 0.35);
+          box-shadow: 1px 10px 78px -3px rgba(0, 0, 0, 0.35);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.tentang {
+  max-width: 1366px;
+}
+
+.tentang .box-tentang {
+  padding: 30px;
+}
+
+.tentang .box-tentang h3 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.tentang .box-tentang h3 span {
+  font-weight: 400;
+}
+
+.tentang .box-tentang .line-kecil {
+  width: 59px;
+  background-color: white;
+  height: 2px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.tentang .box-tentang p {
+  color: rgba(243, 243, 243, 0.8);
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.tentang .box-tentang .download {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 18px 40px;
+  color: white;
+  border: 1px solid white;
+}
+
+.tentang .box-tentang .download:hover {
+  color: #2ed573;
+  border: 1px solid #2ed573;
+}
+
+.tentang .box-tentang .menu-wrapper div {
+  padding: 0.5em 0;
+}
+
+.tentang .box-tentang .menu-wrapper div a {
+  color: rgba(243, 243, 243, 0.8);
+}
+
+.tentang .box-tentang .kontak-wrapper div {
+  padding: 0.5em 0;
+}
+
+.tentang .box-tentang .kontak-wrapper div p {
+  color: rgba(243, 243, 243, 0.8);
+}
+
+.tentang .box-tentang .kontak-wrapper div p i {
+  color: white;
+}
+
+.footer {
+  max-width: 1366px;
+}
+
+.footer div a {
+  color: black;
+  font-size: 24px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -602,6 +834,12 @@ nav ul li .nav-link:hover {
   .jurusan .row .col .box-jurusan {
     margin: auto !important;
   }
+  .artikel .kepsek-paragraf p b {
+    text-align: center;
+  }
+  .tentang .download {
+    padding: 18px 10px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -621,11 +859,34 @@ nav ul li .nav-link:hover {
   .carousel-inner .mycarousel-caption h5, .carousel-inner .mycarousel-caption p {
     font-size: 20px !important;
   }
-  .pendaftaran .pertama h1 {
-    font-size: 40px !important;
+  .pendaftaran .kedua {
+    margin: 1em  auto;
   }
   .pendaftaran .kedua a {
     padding: 10px 20px !important;
+  }
+  .prestasi .box-prestasi {
+    margin: auto;
+    max-width: 300px;
+  }
+  .jurusan .box-jurusan {
+    max-width: 300px;
+  }
+  .jurusan .box-jurusan .box-title h4 {
+    font-size: 20px;
+  }
+  .jurusan .box-jurusan .box-image img {
+    width: 90px;
+    height: 90px;
+  }
+  .jurusan .box-jurusan .box-caption p {
+    font-size: 12px;
+  }
+  .jurusan .box-jurusan .card-footer p {
+    font-size: 17px;
+  }
+  .jurusan .box-jurusan .card-footer p span {
+    font-size: 12px;
   }
 }
 

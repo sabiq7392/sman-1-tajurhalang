@@ -5,9 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/40613f3d16.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
@@ -96,7 +95,7 @@
         </div>
       </div>
     
-      <div class="keunggulan container bg-white">
+      <div class="keunggulan container bg-white" id="keunggulan">
         <div class="container">
           <div class="keunggulanTitle">
             <h1 class="text-center judulBesar">KEUNGGULAN <span>KAMI</span></h1>
@@ -217,13 +216,13 @@
 <!------------------Keunggulan-----------------> 
 
     <div class="cutterTop-Pendaftaran"></div>
-      <div class="pendaftaran container myBg-Blue ">
+      <div class="pendaftaran container-fluid myBg-Blue" id="ppdb">
         
         <div class="container-fluid ">
           <div class="row reveal-right">
             <div class="col-md-12 col-lg-12 col-xl-9">
               <div class="pertama"> <!--d-fex ini biar si <h1> ke tengah boxnya-->
-                <h1 class="text-center">Pendaftaran Peserta Didik Baru</h1>
+                <h1 class="text-center">PPDB 2021</h1>
               </div>
             </div> <!--col-->
             <div class="col-md-12  col-lg-12 col-xl-3 d-flex justify-content-sm-center justify-content-md-center  align-items-center"> <!--d-flex ini biar si button ketengah container -->
@@ -238,7 +237,7 @@
     <div class="cutterBottom-Pendaftaran"></div>
 <!-----------------Pendaftaran-----------------> 
 
-      <div class="prestasi container bg-white">
+      <div class="prestasi container bg-white" id="prestasi">
         <div class="container">
           <div class="prestasiTitle mb-5">
             <h1 class="text-center judulBesar">PRESTASI <span>KAMI</span></h1>
@@ -294,7 +293,7 @@
       </div> <!-----prestasi-->
 <!-----------------Prestasi-------------------->
 
-      <div class="jurusan container bg-white">
+      <div class="jurusan container pt-5 pb-5 bg-white" id="jurusan">
         <div class="container">
           <div class="jurusanTitle mb-5">
             <h1 class="text-center judulBesar">JURUSAN <span>KAMI</span></h1>
@@ -427,49 +426,342 @@
           </div> <!---row-->
         </div> <!---container-->
       </div> <!---jurusan-->
+<!-----------------Jurusan-------------------->
+
+      <div class="eskul pt-5 pb-5 container bg-white" id="eskul">
+        <div class="container">
+          <div class="eskulTitle mb-5">
+            <h1 class="text-center judulBesar">EKSTRAKULIKULER <span>KAMI</span></h1>
+            <p class="text-center paragrafKecil">
+              <i class="fas fa-info-circle"></i> Pilih sesuai passion-mu dengan hati-hati, 
+              cari info tentang jurusannya apa saja yang akan dipelajari kelak jika mengikuti ini, itu
+            </p>
+            <div class="line"></div>
+          </div> <!--Eskul title-->
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 reveal-up justify-content-center">
+            <div class="col">
+              <div class="box-jurusan">
+                <div class="img-box">
+                  <img src="img/Prestasi_1.png" alt=""> 
+                </div>
+                <div class="cutterBottom"></div>
+                <div class="cutterBottom-dua"></div>
+                <div class="box-jurusan-caption">
+                  <h4>TEATER</h4>
+                </div>
+              </div> <!---box-jurusan-->
+            </div> <!--col-->
+
+            <div class="col">
+              <div class="box-jurusan">
+                <div class="img-box">
+                  <img src="img/Prestasi_2.png" alt=""> 
+                </div>
+                <div class="cutterBottom"></div>
+                <div class="cutterBottom-dua"></div>
+                <div class="box-jurusan-caption">
+                  <h4 style="color: #4D1A19;">PASKIBRA</h4>
+                </div>
+              </div> <!---box-jurusan-->
+            </div> <!--col-->
+
+            <div class="col">
+              <div class="box-jurusan">
+                <div class="img-box">
+                  <img src="img/Prestasi_3.png" alt=""> 
+                </div>
+                <div class="cutterBottom"></div>
+                <div class="cutterBottom-dua"></div>
+                <div class="box-jurusan-caption">
+                  <h4 style="color: #AD4D22;">PRAMUKA</h4>
+                </div>
+              </div> <!---box-jurusan-->
+            </div> <!--col-->
+            <div class="col">
+              <div class="box-jurusan">
+                <div class="img-box">
+                  <img src="img/Pakar.png" alt=""> 
+                </div>
+                <div class="cutterBottom"></div>
+                <div class="cutterBottom-dua"></div>
+                <div class="box-jurusan-caption">
+                  <h4>PAKAR</h4>
+                </div>
+              </div> <!---box-jurusan-->
+            </div> <!--col-->
+
+            <div class="col">
+              <div class="box-jurusan">
+                <div class="img-box">
+                  <img src="img/bekyoukai.png" alt=""> 
+                </div>
+                <div class="cutterBottom"></div>
+                <div class="cutterBottom-dua"></div>
+                <div class="box-jurusan-caption">
+                  <h4 style="color: #4D1A19;">BENKYOUKAI</h4>
+                </div>
+              </div> <!---box-jurusan-->
+            </div> <!--col-->
+
+            <div class="col">
+              <div class="box-jurusan">
+                <div class="img-box">
+                  <img src="img/bultang.png" alt=""> 
+                </div>
+                <div class="cutterBottom"></div>
+                <div class="cutterBottom-dua"></div>
+                <div class="box-jurusan-caption">
+                  <h4 style="color: #AD4D22;">BULUTANGKIS</h4>
+                </div>
+              </div> <!---box-jurusan-->
+            </div> <!--col-->
+          </div> <!--row-->
+        </div> <!---container--->
+      </div> <!--EKSKUL-->
+<!-----------------EKSKUL-------------------->   
+
+      <div class="artikel container pt-5 pb-5 bg-white" id="artikel">
+        <div class="container">
+          <div class="artikelTitle mb-5">
+            <h1 class="text-center judulBesar">ARTIKEL <span>KAMI</span></h1>
+            <p class="text-center paragrafKecil">
+              <i class="fas fa-info-circle"></i> Baca info populer yang ada disini seperti 
+              kegiatan dan lain-lain
+            </p>
+            <div class="line"></div>
+          </div> <!--Atikel title-->
+        
+          <div class="row row-cols-1 row-cols-lg-2 reveal-up justify-content-center">
+            <div class="col">
+              <div class="kepsek h-100">
+                <div class="title">
+                  <h3>KEPALA SEKOLAH</h3>
+                </div>
+                <div class="image">
+                  <img src="/img/kepsek.jpg" alt="">
+                </div>
+                <div class="caption">
+                  <h4>H. Jajang Hidayat, S.Pd, M.Pd</h4>
+                </div>
+              </div> <!---kepsek-->
+            </div> <!--col-->
+            <div class="col">
+              <div class="kepsek-paragraf h-100 mb-5">
+                <p>
+                  <b> Assalamualaikum Warahmatullahi Wabarakatuh</b> <br><br>
+
+                  Para pengunjung situs yang berbahagia, kami ucapkan selamat datang 
+                  di website SMAN 1 Tajurhalang ini. Bahwasanya kami sadar sepenuhnya 
+                  dalam rangka memajukan pendidikan di era berkembangnya Teknologi Informasi 
+                  yang begitu pesat, sangat diperlukan media komunikasi yang baik untuk 
+                  terpenuhinya kebutuhan informasi bagi siswa, guru, orang tua maupun 
+                  masyarakat, sehingga kami berusaha mewujudkan hal tersebut. meskipun peluncuran 
+                  situs ini masih membutuhkan peningkatan pada beberapa bagian, kami berharap website
+                  ini dapat bermanfaat dalam menyediakan informasi yang berhubungan dengan pendidikan,
+                    ilmu pengetahuan dan, terutama informasi seputar SMAN 1 Tajurhalang. <br><br>
+                  Kami berharap, dengan adanya media layanan informasi situs ini semoga dapat menjadi
+                  jembatan bagi hubungan baik antara SMA Negeri 1 Tajurhalang dengan masyarakat digital,
+                    menambah wawasan, mempermudah dan mempercepat proses dalam mendapatkan info yang
+                    dibutuhkan berkaitan dengan SMA Negeri 1 Tajurhalang. <br><br>
+                  Bahwasanya kami sadar sepenuhnya dalam rangka memajukan pendidikan di era berkembangnya 
+                  Teknologi Informasi(TI) yang begitu pesat, sangat diperlukan berbagai sarana 
+                  prasarana yang memadai.
+                  Akhirnya, terima kasih kami atas kunjungan ada pada situs kami, mudah-mudahan 
+                  membawa manfaat bagi kita semua. <br><br>
+
+                  <b>Wassalamualaikum Warahmatullahi Wabarakatuh</b>
+                  
+                </p>
+              </div>
+            </div><!--col-->
+          </div> <!--row kepsek-->
+          <div class="row row-cols-md-2 row-cols-lg-3 row-cols-xl-4 mt-5">
+            <div class="col mb-5">
+              <div class="mybox h-100">
+                <img src="/img/artikel1.png" alt="Wifi di semua tempat">
+                <div class="box-title">
+                  <h4>Kebakaran Hutan</h4>
+                </div>
+                <div class="box-caption">
+                  <p>
+                    Kebakaran hutan dan lahan ( karhutla) masih terjadi di sejumlah wilayah di Pulau Sumatera dan Kalimantan....
+                    <br><a href="">Read More...</a>
+                  </p>
+                </div>
+              </div>
+            </div> <!--col-->
+            <div class="col mb-5">
+              <div class="mybox h-100">
+                <img src="/img/artikel2.png" alt="Wifi di semua tempat">
+                <div class="box-title">
+                  <h4>SMARTFEST 2021</h4>
+                </div>
+                <div class="box-caption">
+                  <p>
+                    Kebakaran hutan dan lahan ( karhutla) masih terjadi di sejumlah wilayah di Pulau Sumatera dan Kalimantan....
+                    <br><a href="">Read More...</a>
+                  </p>
+                </div>
+              </div>
+            </div> <!--col-->
+            <div class="col mb-5">
+              <div class="mybox h-100">
+                <img src="/img/artikel3.png" alt="Wifi di semua tempat">
+                <div class="box-title">
+                  <h4>Perayaan Hari Pancasila</h4>
+                </div>
+                <div class="box-caption">
+                  <p>
+                    Kebakaran hutan dan lahan ( karhutla) masih terjadi di sejumlah wilayah di Pulau Sumatera dan Kalimantan....
+                    <br><a href="">Read More...</a>
+                  </p>
+                </div>
+              </div>
+            </div> <!--col-->
+            <div class="col mb-5">
+              <div class="mybox h-100">
+                <img src="/img/artikel4.png" alt="Wifi di semua tempat">
+                <div class="box-title">
+                  <h4>Blusukan Pa Arief</h4>
+                </div>
+                <div class="box-caption">
+                  <p>
+                    Kebakaran hutan dan lahan ( karhutla) masih terjadi di sejumlah wilayah di Pulau Sumatera dan Kalimantan....
+                    <br><a href="">Read More...</a>
+                  </p>
+                </div>
+              </div>
+            </div> <!--col-->
+            <div class="col mb-5">
+              <div class="mybox h-100">
+                <img src="/img/atikel5.png" alt="Wifi di semua tempat">
+                <div class="box-title">
+                  <h4>Kampanye Pelajar Anti-kekerasan</h4>
+                </div>
+                <div class="box-caption">
+                  <p>
+                    Kebakaran hutan dan lahan ( karhutla) masih terjadi di sejumlah wilayah di Pulau Sumatera dan Kalimantan....
+                    <br><a href="">Read More...</a>
+                  </p>
+                </div>
+              </div>
+            </div> <!--col-->
+            <div class="col mb-5">
+              <div class="mybox h-100">
+                <img src="/img/artikel6.png" alt="Wifi di semua tempat">
+                <div class="box-title">
+                  <h4>Hari Guru</h4>
+                </div>
+                <div class="box-caption">
+                  <p>
+                    Kebakaran hutan dan lahan ( karhutla) masih terjadi di sejumlah wilayah di Pulau Sumatera dan Kalimantan....
+                    <a href="">Read More...</a>
+                  </p>
+                </div>
+              </div>
+            </div> <!--col-->
+            <div class="col mb-5">
+              <div class="mybox h-100">
+                <img src="/img/artikel1.png" alt="Wifi di semua tempat">
+                <div class="box-title">
+                  <h4>Kebakaran Hutan</h4>
+                </div>
+                <div class="box-caption">
+                  <p>
+                    Kebakaran hutan dan lahan ( karhutla) masih terjadi di sejumlah wilayah di Pulau Sumatera dan Kalimantan....
+                    <br><a href="">Read More...</a>
+                  </p>
+                </div>
+              </div>
+            </div> <!--col-->
+            <div class="col mb-5">
+              <div class="mybox h-100">
+                <img src="/img/artikel2.png" alt="Wifi di semua tempat">
+                <div class="box-title">
+                  <h4>SMARTFEST 2021</h4>
+                </div>
+                <div class="box-caption">
+                  <p>
+                    Kebakaran hutan dan lahan ( karhutla) masih terjadi di sejumlah wilayah di Pulau Sumatera dan Kalimantan....
+                    <br><a href="">Read More...</a>
+                  </p>
+                </div>
+              </div>
+            </div> <!--col-->
+          </div> <!---row-->
+        </div> <!--container-->
+      </div> <!--artikel-->
+<!-----------------ARTIKEL--------------------> 
     </main>
+
+    <footer>
+      <div class="tentang p-5 pt-5 pb-5 container myBg-Blue" id="tentang">
+        <div class="container">
+          <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+            <div class="col">
+              <div class="box-tentang ">
+                <h3>TENTANG <span>KAMI</span></h3>
+                <div class="line-kecil"></div>
+                <p>
+                  SMAN 1 Tajur Halang Bogor menggembangkan konsep 
+                  pendidikan dengan orientasi wawasan keunggulan dengan
+                  penekanan pada pengguasaan ilmu-ilmu dasar (Matematika , Bahasa inggris, Komputer), 
+                  serta menitikberatkan pada etika moral dan displin siswa
+                </p>
+                <div>
+                  <a href="" class=" btn download">DOWNLOAD BROSUR</a>
+                </div>
+                
+              </div>
+            </div> <!---col-->
+            <div class="col">
+              <div class="box-tentang">
+                <h3>MENU <span>UTAMA</span></h3>
+                <div class="line-kecil"></div>
+                <div class="menu-wrapper">
+                  <div><a href="index.html">Beranda</a></div>
+                  <div><a href="#jurusan">Jurusan</a></div>
+                  <div><a href="#artikel">Artikel</a></div>
+                  <div><a href="#ppdb">PPDB 2020</a></div>
+                  <div><a href="#tentang">Tentang</a></div>
+                </div>
+              </div>
+            </div> <!----col-->
+            <div class="col">
+              <div class="box-tentang">
+                <h3>KONTAK <span>UTAMA</span></h3>
+                <div class="line-kecil"></div>
+                <div class="kontak-wrapper">
+                  <div>
+                    <ul>
+                      <li><p><img src="/img//phone-call.png" alt="" width="20px" class="mr-3"> 02518381261</p></li>
+                      <li><p><img src="/img//phone-call.png" alt="" width="20px" class="mr-3" style="visibility: hidden;"></i> 02518381159</p></li>
+                    </ul>
+                  </div>
+                  <div class="d-flex flex-row">
+                    <div><img src="/img/email.png" alt="" width="20px" height="20px" class="mr-3"></div>
+                    <div><p>sman1tajurhlang@gmail.com</p></div>
+                  </div>
+                  <div class="d-flex flex-row">
+                    <div><img src="/img/location-pin.png" alt="" width="20px" height="20px" class="mr-3"></div>
+                    <div><p>Jl. Jatayu, Tajurhalang Tajur Halang, Bogor Jawa Barat 16320</p></div>
+                  </div>
+                </div>
+              </div>
+            </div> <!----col-->
+          </div> <!-----row-->
+        </div> <!----container-->
+      </div> <!----Tentang-->
+<!-----------------TENTANG-------------------->
+      <div class="footer pt-5 pb-5 container bg-white">
+        <div class="d-flex justify-content-center"><a href="">Develop By <img src="/img/mame.png" alt="" width="60px"> Sabiq Muhammad</a></div>
+      </div> <!---footer-->
+    </footer>
+    
+
+
     
     <script src="/js/app.js"></script>
-
-<script>
-
-</script>
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

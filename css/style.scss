@@ -14,9 +14,11 @@ $fontbesar:32px;
     margin: 0;
     box-sizing: border-box;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
-    background-color: #f4f4f4;
+    background-color: #ebebeb;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -199,11 +201,10 @@ nav {
         margin: auto;
         max-width: 280px;
         transition: 0.3s;
-        border-radius: 10px;
         text-align: center;
         .box-title {
-            padding-top: 2em ;
-
+            padding: 10px 0;
+            
             h4 {
                 color: $myblue;
                 font-weight: 500;
@@ -211,7 +212,7 @@ nav {
             }
         }
         .box-image {
-            padding: 2em ;
+            padding: 30px ;
            img {
                width: 150px;
                height: 150px;
@@ -315,7 +316,7 @@ nav {
         padding: 0!important;
     }
     .pertama {
-        margin-top: 0.5em;
+        margin-top: 20px;
         h1 {
             font-weight: medium;
             font-size: 50px;
@@ -325,7 +326,7 @@ nav {
         }
     }
     .kedua {
-        margin-top: 30px;
+        margin-top: 20px;
         a {
             transition: 0.3s;
             padding: 0.7em 1em;
@@ -400,8 +401,6 @@ nav {
 }
 .jurusan {
     max-width: 1366px!important;
-    height: 3000px;
-
     .jurusanTitle {
         h1 {
             span {
@@ -416,7 +415,7 @@ nav {
         .box-title {
             margin-bottom: 50px;
             h4 {
-                font-size: 30px;
+                font-size: 25px;
             }
         }
         .box-image {
@@ -429,7 +428,7 @@ nav {
         .box-caption {
             padding-bottom: 54px;
             p {
-                font-size: 16px;
+                font-size: 14px;
             }
         }
         .card-footer {
@@ -438,30 +437,28 @@ nav {
             .laci-satu-ipa, .laci-dua-ipa, .laci-tiga-ipa, .laci-satu-ips, .laci-dua-ips, .laci-tiga-ips {
                 display: flex;
                 justify-content: center;
-                height: 80px;
-                margin-top: 25px;
+                height: 50px;
                 max-width: 410px;
                 transition: 0.5s;
-                padding: 0 10px;
                 border-bottom: 1px solid rgba(0,0, 0, 0.15);
+                margin-top: 5px;
                 cursor: pointer;
                 p {
+                    padding: 0 15px;
+                    margin-top:12px ;
                     font-weight: 600;
-                    margin-top: 22px;
                     color: white;
-                    font-size: 23px;
+                    font-size:17px;
                     
                     span {
                         font-weight: normal;
-                        font-size: 15px;
+                        font-size: 12px;
                         display: none;
                     }
-                        
-                    
                 }
             }
             .laci-tiga-ipa, .laci-tiga-ips {
-                margin-bottom: 25px;
+                margin-bottom: 5px;
             }
             .laci-satu-ipa:hover, .laci-dua-ipa:hover, .laci-tiga-ipa:hover {
                 background-color: #e63633;
@@ -469,13 +466,199 @@ nav {
             .laci-satu-ips:hover, .laci-dua-ips:hover, .laci-tiga-ips:hover {
                 background-color: #0f67c0;
             }
+        }
+    }
+}
+.eskul {
+    max-width: 1366px;
+    h1 {
+        span {
+            color: $myblue;
+        }
+    }
+    .box-jurusan {
+        margin: auto;
+        max-width: 300px;
+        .img-box {
+            box-shadow: $myshadow;
+            img {
+                z-index: -1;
+                width: 100%;
+                height: 355px;
+            }
+        }
+        .cutterBottom {
+            background-color: white;
+            width: 100%;
+            margin-top: -70px;
+            height:70px;
+            z-index: 1;
+            position: relative;
+        }
+        .cutterBottom-dua {
+            background-color: white;
+            width: 100%;
+            margin-top: -92px;
+            height: 70px;
+            transform: skewY(6deg)!important;
+            background-color: white!important;
+        }
+        .box-jurusan-caption {
+            z-index: 2;
+            top: -51px;
+            text-align: center;
+            position: relative;
+            h4 {
+                margin-top: 20px;
+                color: $myblue;
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+    }
+}
+.artikel {
+    max-width: 1366px;
+    h1 {
+        span {
+            color: $myblue;
+        }
+    }
+    .kepsek {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 1px solid #DCDCDC;
 
+        .title {
+            padding: 30px;
+            margin-bottom: 20px;
+            h3 {
+                font-weight: normal!important;
+                color: $myblue;
+                font-size: 30px;
+            }
+        }
+        .image {
+            img {
+                width: 300px;
+                height: 300px;
+            }
+        }
+        .caption {
+            padding: 30px;
+            margin-top: 20px;
+            h4 {
+                font-size:20px ;
+                font-weight:600;
+            }
+        }
+    }
+    .kepsek-paragraf {
+        margin-top: 35px;
+        p {
+            font-weight: 500;
+            font-size: 16px;
         }
     }
     
+    .mybox {
+        border-radius: 10px;
+        border: 1px solid #DCDCDC;
+        margin: auto;
+        max-width: 280px;
+        transition: 0.1s;
+        img {
+            width: 100%;
+            height: 250px;
+        }
+        .box-title {
+            padding: 1em 0.7em;
+            h4 {
+                font-weight: 500;
+                font-size: 30px;
+            }
+        }
+        .box-caption {
+            padding: 0em 0.7em;
+            padding-bottom: 1em;
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+    .mybox:hover {
+        box-shadow: 1px 10px 78px -3px rgba(0,0,0,0.35);
+        transform: scale(1.01);
+    }
 }
+.tentang {
+    max-width: 1366px;
+    .box-tentang {
+        padding: 30px;
+        h3 {
+            font-size: 30px;
+            font-weight: 700;
+            span {
+                font-weight: 400;
+            }
+        }
 
+        .line-kecil {
+            width: 59px;
+            background-color: white;
+            height: 2px;
+            margin-bottom: 15px;
+            margin-top: 10px;
+        }
+        p {
+            color: rgba(243, 243, 243, 0.80 );
+            font-family: $roboto;
+            font-weight: 300;
+            margin-bottom: 30px ;
+        }
+        .download {
+            transition: 0.3s;
+            padding: 18px 40px;
+            color: white;
+            border: 1px solid white;
+        }
+        .download:hover {
+            color: #2ed573;
+            border: 1px solid #2ed573;
+        }
+        .menu-wrapper {
+            div {
+                padding:0.5em 0;
+                a {
+                    color: rgba(243, 243, 243, 0.80 );
+                }
+            }
+        }
+        .kontak-wrapper {
+            div {
+                padding:0.5em 0;
+                p {
+                    color: rgba(243, 243, 243, 0.80 );
+                    i {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+.footer {
+    max-width: 1366px;
 
+    div {
+        a {
+            color: black;
+            font-size: 24px;
+        }
+    }
+}
   
 
 // media quaries
@@ -571,7 +754,23 @@ nav {
         
         
     }
-
+    .artikel {
+        .kepsek-paragraf {
+            p {
+                b {
+                    text-align: center;
+                }
+            }
+        }
+            
+    }
+    .tentang {
+        .download {
+           
+            padding: 18px 10px;
+            
+        }
+    }
 }
 @media screen and (max-width: 576px) {
     header {
@@ -599,18 +798,50 @@ nav {
         }
     }
     .pendaftaran {
-        .pertama {
-            h1 {
-                font-size: 40px!important;
-            }
-        }
+        
         .kedua {
+            margin: 1em  auto;
             a {
                 padding: 10px 20px!important;
             }
         }
             
     } 
+    .prestasi {
+        .box-prestasi {
+            margin: auto;
+            max-width: 300px;
+        }
+    }
+    .jurusan {
+        .box-jurusan {
+            max-width: 300px;
+            .box-title {
+                h4 {
+                    font-size: 20px;
+                }
+            }
+            .box-image {
+                img {
+                    width: 90px;
+                    height: 90px;
+                }
+            }
+            .box-caption {
+                p {
+                    font-size: 12px;
+                }
+            }
+            .card-footer {
+                    p {
+                        font-size: 17px;
+                        span {
+                            font-size: 12px;
+                        }
+                    }
+            }
+        }
+    }
 }
 
 
