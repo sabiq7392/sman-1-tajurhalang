@@ -533,7 +533,7 @@ nav {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        border: 1px solid #DCDCDC;
+        border-right: 1px solid #DCDCDC;
 
         .title {
             padding: 30px;
@@ -568,6 +568,7 @@ nav {
     }
     
     .mybox {
+        min-width: 120px;
         border-radius: 10px;
         border: 1px solid #DCDCDC;
         margin: auto;
@@ -600,7 +601,8 @@ nav {
 .tentang {
     max-width: 1366px;
     .box-tentang {
-        padding: 30px;
+        margin-right: 50px;
+        margin-bottom: 40px;
         h3 {
             font-size: 30px;
             font-weight: 700;
@@ -708,6 +710,10 @@ nav {
                 }
              }
         }
+    }
+    .kepsek {
+        border-right: 0!important;
+        border-bottom: 1px solid #DCDCDC;
     }
 }
 @media screen and (max-width: 768px) {
@@ -833,6 +839,15 @@ nav {
                             font-size: 12px;
                         }
                     }
+            }
+        }
+    }
+    .artikel {
+        .kepsek {
+            .title {
+                h3 {
+                    font-size: 25px;
+                }
             }
         }
     }

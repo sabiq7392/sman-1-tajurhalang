@@ -631,7 +631,7 @@ nav ul li .nav-link:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid #DCDCDC;
+  border-right: 1px solid #DCDCDC;
 }
 
 .artikel .kepsek .title {
@@ -670,6 +670,7 @@ nav ul li .nav-link:hover {
 }
 
 .artikel .mybox {
+  min-width: 120px;
   border-radius: 10px;
   border: 1px solid #DCDCDC;
   margin: auto;
@@ -713,7 +714,8 @@ nav ul li .nav-link:hover {
 }
 
 .tentang .box-tentang {
-  padding: 30px;
+  margin-right: 50px;
+  margin-bottom: 40px;
 }
 
 .tentang .box-tentang h3 {
@@ -812,6 +814,10 @@ nav ul li .nav-link:hover {
             justify-content: center;
     padding: 1em 0;
   }
+  .kepsek {
+    border-right: 0 !important;
+    border-bottom: 1px solid #DCDCDC;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -893,6 +899,9 @@ nav ul li .nav-link:hover {
   }
   .jurusan .box-jurusan .card-footer p span {
     font-size: 12px;
+  }
+  .artikel .kepsek .title h3 {
+    font-size: 25px;
   }
 }
 
