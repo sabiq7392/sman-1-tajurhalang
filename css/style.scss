@@ -933,11 +933,11 @@ a {
     }
 }
 @keyframes boxmoveup {
-    from {
+    0% {
         bottom: -100px;
         opacity: 0;
     }
-    to {
+    100% {
         opacity: 1;
         bottom: 0px;
     }
@@ -1085,15 +1085,17 @@ a {
     animation: boxmoveup 2s;
 }
 .reveal-up {
-    position: relative;
-    transform: translateY(150px);
     opacity: 0;
+    position: relative;
+    transform: translateY(250px);
 }
 .reveal-up.active {
-    animation: boxmoveup 1.5s;
-    transform: translateY(0px);
     opacity: 1;
+    animation: boxmoveup 1s;
+    transform: translateY(0px);
 }
+
+
 .reveal-right {
     position: relative;
     transform: translateX(-300px);
