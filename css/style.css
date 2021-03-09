@@ -18,66 +18,9 @@ header {
   border-bottom: 1px solid #f3f3f3;
 }
 
-header .header-link-wrapper {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-header .header-link-wrapper div {
-  display: inherit;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-header .header-link-wrapper div a {
-  display: inherit;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header .header-link-wrapper div a i {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  padding: 0 10px;
-  color: black;
-  font-size: 25px;
-  border-left: 1px solid #f3f3f3;
-}
-
-header .header-link-wrapper div a .fa-whatsapp:hover {
-  color: #6ab04c;
-}
-
-header .header-link-wrapper div a .fa-youtube:hover {
-  color: #eb4d4b;
-}
-
-header .header-link-wrapper div a .fa-facebook-f:hover {
-  color: #217AD3;
-}
-
-header .header-link-wrapper div a .fa-instagram:hover {
-  color: #DD2A7B;
-}
-
-header .header-link-wrapper div:last-child a {
-  text-align: center;
-  padding: 0.5em 1.5em;
-  margin: auto;
-  color: white;
-  font-size: 16px;
-}
-
-header .header-link-wrapper div:last-child:hover {
-  background-color: rgba(33, 122, 211, 0.85);
+header .header-content {
+  font-size: 15px;
+  padding: 10px 20px;
 }
 
 nav {
@@ -120,7 +63,7 @@ nav ul li .nav-link {
   color: #4b4b4b !important;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 nav ul li .nav-link:hover {
@@ -566,8 +509,8 @@ nav ul li .nav-link:hover {
 }
 
 .eskul .box-eskul .img-box {
-  -webkit-box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.25);
-          box-shadow: 0 0.25rem 0.2rem rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 4px 17px 59px -3px rgba(0, 0, 0, 0.15);
+          box-shadow: 4px 17px 59px -3px rgba(0, 0, 0, 0.15);
 }
 
 .eskul .box-eskul .img-box img {
@@ -605,8 +548,8 @@ nav ul li .nav-link:hover {
 .eskul .box-eskul .box-eskul-caption h4 {
   margin-top: 20px;
   color: #217AD3;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 17px;
 }
 
 .artikel {
@@ -640,7 +583,7 @@ nav ul li .nav-link:hover {
 }
 
 .artikel .kepsek .title h3 {
-  font-weight: normal !important;
+  font-weight: 500 !important;
   color: #217AD3;
   font-size: 30px;
 }
@@ -690,7 +633,7 @@ nav ul li .nav-link:hover {
 
 .artikel .mybox .box-title h4 {
   font-weight: 500;
-  font-size: 30px;
+  font-size: 22px;
 }
 
 .artikel .mybox .box-caption {
@@ -699,7 +642,7 @@ nav ul li .nav-link:hover {
 }
 
 .artikel .mybox .box-caption p {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .artikel .mybox:hover {
@@ -740,6 +683,7 @@ nav ul li .nav-link:hover {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   margin-bottom: 30px;
+  font-size: 15px;
 }
 
 .tentang .box-tentang .download {
@@ -760,7 +704,14 @@ nav ul li .nav-link:hover {
 }
 
 .tentang .box-tentang .menu-wrapper div a {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 15px;
   color: rgba(243, 243, 243, 0.8);
+}
+
+.tentang .box-tentang .menu-wrapper div a:hover {
+  color: #2ed573;
 }
 
 .tentang .box-tentang .kontak-wrapper div {
@@ -768,6 +719,7 @@ nav ul li .nav-link:hover {
 }
 
 .tentang .box-tentang .kontak-wrapper div p {
+  font-size: 15px;
   color: rgba(243, 243, 243, 0.8);
 }
 
@@ -781,7 +733,11 @@ nav ul li .nav-link:hover {
 
 .footer div a {
   color: black;
-  font-size: 24px;
+  font-size: 19px;
+}
+
+.footer div .mame {
+  width: 40px;
 }
 
 @media screen and (max-width: 992px) {
@@ -872,7 +828,7 @@ nav ul li .nav-link:hover {
     font-size: 37px !important;
   }
   .paragrafKecil {
-    font-size: 14px !important;
+    font-size: 15px !important;
   }
   .carousel-inner .mycarousel-caption h5, .carousel-inner .mycarousel-caption p {
     font-size: 20px !important;
@@ -902,6 +858,31 @@ nav ul li .nav-link:hover {
   }
   .artikel .kepsek .title h3 {
     font-size: 25px;
+  }
+  .artikel .kepsek-paragraf p {
+    font-size: 13px;
+  }
+  .tentang .box-tentang h3 {
+    font-size: 25px;
+  }
+  .tentang .box-tentang p {
+    font-size: 13px;
+  }
+  .tentang .box-tentang .menu-wrapper div a {
+    font-size: 13px;
+  }
+  .tentang .box-tentang .kontak-wrapper div p {
+    font-size: 13px;
+  }
+  .footer {
+    max-width: 1366px;
+  }
+  .footer div a {
+    color: black;
+    font-size: 15px;
+  }
+  .footer div .mame {
+    width: 35px;
   }
 }
 

@@ -21,58 +21,12 @@ body {
     background-color: #ebebeb;
     font-family: 'Raleway', sans-serif;
 }
-
 header {
     border-bottom: 1px solid rgb(243, 243, 243);
-    .header-link-wrapper {
-        height: fit-content;
-        display: flex;
-        
-        div {
-            display: inherit;
-            align-items: center;
-            transition: 0.3s;
-            a { 
-                display: inherit;
-                align-items: center;
-                i {
-                    transition: 0.3s;
-                    padding: 0 10px;
-                    color: black;
-                    font-size:25px;
-                    border-left: 1px solid rgb(243, 243, 243);
-                    
-                }
-                .fa-whatsapp:hover {
-                    color: $mygreen;
-                }
-                .fa-youtube:hover {
-                    color: $myred;
-                }
-                .fa-facebook-f:hover {
-                    color: $myblue;
-                }
-                .fa-instagram:hover {
-                    color:#DD2A7B;
-                }
-            }   
-
-        }
-        
-        div:last-child {
-            
-            a {
-                text-align: center;
-                padding: 0.5em 1.5em;
-                margin: auto;
-                color: white;
-                font-size: 16px;
-            }
-        }
-        div:last-child:hover {
-            background-color:rgba(#217ad3, 0.85) ;
-        }
-    }
+    .header-content {
+        font-size: 15px;
+        padding: 10px 20px;
+    }    
 }
 nav {
     box-shadow: $myshadow;
@@ -104,7 +58,7 @@ nav {
             .nav-link {
                 color: rgb(75, 75, 75)!important;
                 transition: 0.4s;
-                font-size: 18px;
+                font-size: 15px;
             }
             .nav-link:hover {
                 border-radius:2px;
@@ -484,7 +438,7 @@ nav {
         margin: auto;
         max-width: 300px;
         .img-box {
-            box-shadow: $myshadow;
+            box-shadow: 4px 17px 59px -3px rgba(0,0,0,0.15);
             img {
                 z-index: -1;
                 width: 100%;
@@ -515,8 +469,8 @@ nav {
             h4 {
                 margin-top: 20px;
                 color: $myblue;
-                font-weight: bold;
-                font-size: 20px;
+                font-weight: 500;
+                font-size: 17px;
             }
         }
     }
@@ -539,7 +493,7 @@ nav {
             padding: 30px;
             margin-bottom: 20px;
             h3 {
-                font-weight: normal!important;
+                font-weight: 500!important;
                 color: $myblue;
                 font-size: 30px;
             }
@@ -582,14 +536,14 @@ nav {
             padding: 1em 0.7em;
             h4 {
                 font-weight: 500;
-                font-size: 30px;
+                font-size: 22px;
             }
         }
         .box-caption {
             padding: 0em 0.7em;
             padding-bottom: 1em;
             p {
-                font-size: 16px;
+                font-size: 14px;
             }
         }
     }
@@ -623,6 +577,7 @@ nav {
             font-family: $roboto;
             font-weight: 300;
             margin-bottom: 30px ;
+            font-size: 15px;
         }
         .download {
             transition: 0.3s;
@@ -638,7 +593,12 @@ nav {
             div {
                 padding:0.5em 0;
                 a {
+                    transition: 0.2s;
+                    font-size: 15px;
                     color: rgba(243, 243, 243, 0.80 );
+                }
+                a:hover {
+                    color: #2ed573;
                 }
             }
         }
@@ -646,6 +606,7 @@ nav {
             div {
                 padding:0.5em 0;
                 p {
+                    font-size: 15px;
                     color: rgba(243, 243, 243, 0.80 );
                     i {
                         color: white;
@@ -661,7 +622,10 @@ nav {
     div {
         a {
             color: black;
-            font-size: 24px;
+            font-size: 19px;
+        }
+        .mame {
+            width: 40px;
         }
     }
 }
@@ -798,7 +762,7 @@ nav {
         font-size: 37px!important;
     }
     .paragrafKecil {
-        font-size: 14px!important;
+        font-size: 15px!important;
     }
     .carousel-inner {
         .mycarousel-caption {
@@ -850,7 +814,50 @@ nav {
                 }
             }
         }
+        .kepsek-paragraf {
+            p {
+                font-size: 13px;
+            }
+        }
     }
+    .tentang {
+        .box-tentang {
+            h3 {
+                font-size: 25px;
+            }
+            p {
+                font-size: 13px;
+            }
+            .menu-wrapper {
+                div {
+                    a {
+                        font-size: 13px;
+                    }
+                }
+            }
+            .kontak-wrapper {
+                div {
+                    p {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        max-width: 1366px;
+    
+        div {
+            a {
+                color: black;
+                font-size: 15px;
+            }
+            .mame {
+                width: 35px;
+            }
+        }
+    }
+     
 }
 
 
