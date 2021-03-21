@@ -80,7 +80,7 @@ $(document).ready(function(){
 
 window.onscroll = function() {sekrol()};
 function sekrol() {
-  var navBrand = document.getElementsByClassName("navbar-brand")[0];
+  let navBrand = document.getElementsByClassName("navbar-brand")[0];
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
     navBrand.style.padding = "0";
   }
@@ -91,14 +91,14 @@ function sekrol() {
 
 window.addEventListener('scroll', reveal);
 function reveal() {
-  var reveal_i = document.querySelectorAll('.reveal-up');
-  var reveal_j = document.querySelectorAll('.reveal-right');
-  var reveal_k = document.querySelectorAll('.myBounce');
+  let reveal_i = document.querySelectorAll('.reveal-up');
+  let reveal_j = document.querySelectorAll('.reveal-right');
+  let reveal_k = document.querySelectorAll('.myBounce');
   
-  for(var i = 0; i < reveal_i.length; i++) {
-    var windowheight = window.innerHeight;
-    var revealtop = reveal_i[i].getBoundingClientRect().top;
-    var revealpoint = 0;
+  for(let i = 0; i < reveal_i.length; i++) {
+    let windowheight = window.innerHeight;
+    let revealtop = reveal_i[i].getBoundingClientRect().top;
+    let revealpoint = 0;
 
     if(revealtop < windowheight - revealpoint) {
       reveal_i[i].classList.add('active');
@@ -108,10 +108,10 @@ function reveal() {
     }
   }
   // ------------------------------------------------
-  for(var j = 0; j < reveal_j.length; j++) {
-    var windowheight_j = window.innerHeight;
-    var revealtop_j = reveal_j[j].getBoundingClientRect().top;
-    var revealpoint_j = 0;
+  for(let j = 0; j < reveal_j.length; j++) {
+    let windowheight_j = window.innerHeight;
+    let revealtop_j = reveal_j[j].getBoundingClientRect().top;
+    let revealpoint_j = 0;
 
     if(revealtop_j < windowheight_j - revealpoint_j) {
       reveal_j[j].classList.add('active');
@@ -121,10 +121,10 @@ function reveal() {
     }
   }
   //--------------------------------------------------
-  for(var k = 0; k < reveal_k.length; k++) {
-    var windowheight_k = window.innerHeight;
-    var revealtop_k = reveal_k[k].getBoundingClientRect().top;
-    var revealpoint_k = 50;
+  for(let k = 0; k < reveal_k.length; k++) {
+    let windowheight_k = window.innerHeight;
+    let revealtop_k = reveal_k[k].getBoundingClientRect().top;
+    let revealpoint_k = 50;
 
     if(revealtop_k < windowheight_k - revealpoint_k) {
       reveal_k[k].classList.add('active');

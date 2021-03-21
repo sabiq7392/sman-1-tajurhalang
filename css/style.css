@@ -509,6 +509,8 @@ nav ul li .nav-link:hover {
 }
 
 .eskul .box-eskul .img-box {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   -webkit-box-shadow: 4px 17px 59px -3px rgba(0, 0, 0, 0.15);
           box-shadow: 4px 17px 59px -3px rgba(0, 0, 0, 0.15);
 }
@@ -550,6 +552,11 @@ nav ul li .nav-link:hover {
   color: #217AD3;
   font-weight: 500;
   font-size: 17px;
+}
+
+.eskul .box-eskul .img-box:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .artikel {
@@ -1345,19 +1352,6 @@ a {
   opacity: 1;
   -webkit-animation: boxmoveup 1s;
           animation: boxmoveup 1s;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-}
-
-.reveal-up-medium {
-  position: relative;
-  -webkit-transform: translateY(150px);
-          transform: translateY(150px);
-}
-
-.reveal-up-medium.active {
-  -webkit-animation: boxmoveup 2s;
-          animation: boxmoveup 2s;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
 }

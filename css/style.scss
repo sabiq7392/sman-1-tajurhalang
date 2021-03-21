@@ -438,6 +438,7 @@ nav {
         margin: auto;
         max-width: 300px;
         .img-box {
+            transition: 0.3s;
             box-shadow: 4px 17px 59px -3px rgba(0,0,0,0.15);
             img {
                 z-index: -1;
@@ -472,6 +473,9 @@ nav {
                 font-weight: 500;
                 font-size: 17px;
             }
+        }
+        .img-box:hover {
+            transform: translateY(-10px);
         }
     }
 }
